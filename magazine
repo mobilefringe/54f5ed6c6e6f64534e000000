@@ -20,21 +20,10 @@
         Holiday Highlights
     </div>
     <div class="inside_page_content">
-       <div class="left_column">
+       
 <iframe src="http://files.flipsnack.com/iframe/embed.html?hash=ftn0omjt2&wmode=window&bgcolor=EEEEEE&t=1448913324" width="640" height="385" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-            </div>
-       <div class="right_column">
-            <p class="right_column_header">centre information</p>
-            <div id="centre_info_container">
-                <script id="centre_info_template" type="x-tmpl-mustache/text">
-                    <p class="directory_content">{{name}}</p>
-                    <p class="directory_content">{{address1}}</p>
-                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-                </script>
-            </div>
-            
-            
-        </div>
+          
+       
        
     </div>
 </div>
