@@ -21,7 +21,8 @@
     </div>
     <div class="inside_page_content">
        <div class="left_column">
-           <iframe width="100%" height="500px" src="//e.issuu.com/embed.html#21975834/31681968" frameborder="0" allowfullscreen></iframe>
+           <div data-configid="18963886/31683116" style="width:525px; height:353px;" class="issuuembed"></div>
+<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
             </div>
        <div class="right_column">
             <p class="right_column_header">centre information</p>
