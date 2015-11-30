@@ -1,3 +1,12 @@
+<style>
+    .inside_page_content{
+        margin-left:0px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+</style>
+
 <div id="loading_screen">
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
