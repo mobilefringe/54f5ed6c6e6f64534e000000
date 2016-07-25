@@ -65,24 +65,24 @@
             </p>
             <p class="small_field">
                 <label for="fielddhkrtu">Child's Last Name</label><br/>
-                <input id="fielddhkrtu" name="cm-f-dhkrtu" type="text" required placeholder="Last Name"/>
+                <input id="fielddhkrtu" name="cm-f-dhkrtu" type="text" required placeholder="Child's Last Name"/>
             </p>
           
             <p class="small_field">
                 <label for="fielddhkril">Child's Year of Birth</label><br />
-                <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Email"/>
-            </p>
-            <p class="large_field">
-                <label for="fieldjykykl">Phone Number*</label><br />
-                <input id="fieldjykykl" name="cm-f-jykykl" type="text" required placeholder="Phone Number"/>
-            </p>
-            <p class="full_field">
-                <label for="fieldjykyki">Street Address</label><br />
-                <input id="fieldjykyki" name="cm-f-jykyki" type="text" placeholder="Street Address"/>
+                <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Child's Year of Birth"/>
             </p>
             <p class="small_field">
-                <label for="fieldjykykt">City</label><br />
-                <input id="fieldjykykt" name="cm-f-jykykt" type="text" placeholder="City"/>
+                <label for="fielddhkrir">Parent/Gaurdian's First Name</label><br />
+                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Gaurdian's First Name"/>
+            </p>
+            <p class="full_field">
+                <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
+                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" placeholder="Parent/Gaurdian's Last Name"/>
+            </p>
+            <p class="small_field">
+                <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
+                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" placeholder="Parent/Gaurdian's Email Address"/>
             </p>
             
             <p class="small_field">
