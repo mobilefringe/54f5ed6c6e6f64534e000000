@@ -45,13 +45,13 @@
         <li><a href="/home">Home</a> </li>
     </ul>
     <div class="page_banner">
-        Enter To Win a $50 Gift Card!
+        KIDS CLUB
     </div>
     <div class="inside_page_content">
         <img class="contest_image" src="http://kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/77f957b8994f2d65ac6199950365bcd4/SC Contests - Teenage Texters.jpg" />
      <br>
      <div class="contest_form_div">
-           <p class="contest_description">Join our mailing list to be automatically entered into our monthly draw for a $50.00 gift card to the Sheridan Centre store of your choice. Draws will take place on the 1st of every month and winners will be notified by email by the 5th of the month.</p>
+           <p class="contest_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
          <form action="http://mobilefringe.createsend.com/t/d/s/iljuul/" method="post" id="contest_form">
             <p style="display:none">
