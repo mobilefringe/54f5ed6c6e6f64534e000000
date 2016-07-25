@@ -174,9 +174,6 @@
                 }
                 
                 
-            } else {
-                e.preventDefault();
-                alert("Please agree to the terms and conditions before submitting!")
             }
         }
             else
