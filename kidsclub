@@ -76,26 +76,26 @@
                 <label for="fielddhkrir">Parent/Gaurdian's First Name</label><br />
                 <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Gaurdian's First Name"/>
             </p>
-            <p class="full_field">
+            <p class="small_field">
                 <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
                 <input id="fielddhkriy" name="cm-f-dhkriy" type="text" placeholder="Parent/Gaurdian's Last Name"/>
             </p>
             <p class="small_field">
                 <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
-                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" placeholder="Parent/Gaurdian's Email Address"/>
+                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
             </p>
             
-            <p class="small_field">
-                <label for="fieldjykykr">Postal Code*</label><br />
-                <input id="fieldjykykr" name="cm-f-jykykr" type="text" required placeholder="Postal Code"/>
+            <p class="full_field">
+                <label for="fielddhkrij">Street Address</label><br />
+                <input id="fielddhkrij" name="cm-f-dhkrij" type="text" required placeholder="Street Address"/>
             </p>
             <p class="small_field">
-                <label for="fieldjykyky">Year of Birth*</label><br />
-                <input id="fieldjykyky" name="cm-f-jykyky" type="text" required placeholder= "Year of Birth"/>
+                <label for="fielddhkrid">City</label><br />
+                <input id="fielddhkrid" name="cm-f-dhkrid" type="text" required placeholder= "Year of Birth"/>
             </p>
-            <p style="display:none">
-                <label for="fieldjykykj">Contest ID</label><br />
-                <input id="fieldjykykj" name="cm-f-jykykj" type="text" />
+            <p style="small_field">
+                <label for="fielddhkrih">Postal Code</label><br />
+                <input id="fielddhkrih" name="cm-f-dhkrih" type="text" />
             </p>
             <br>
             <br>
