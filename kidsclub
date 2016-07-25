@@ -91,11 +91,15 @@
             </p>
             <p class="small_field">
                 <label for="fielddhkrid">City</label><br />
-                <input id="fielddhkrid" name="cm-f-dhkrid" type="text" required placeholder= "Year of Birth"/>
+                <input id="fielddhkrid" name="cm-f-dhkrid" type="text" required placeholder= "City"/>
             </p>
             <p style="small_field">
                 <label for="fielddhkrih">Postal Code</label><br />
-                <input id="fielddhkrih" name="cm-f-dhkrih" type="text" />
+                <input id="fielddhkrih" name="cm-f-dhkrih" type="text" required placeholder="Postal Code" />
+            </p>
+             <p style="small_field">
+                <label for="fielddhkrik">Phone Number</label><br />
+                <input id="fielddhkrik" name="cm-f-dhkrik" type="text" required placeholder="Phone Number" />
             </p>
             <br>
             <br>
