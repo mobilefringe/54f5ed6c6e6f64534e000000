@@ -115,6 +115,7 @@
                 <label for="newsletter_signup" style="display:none">Agree Terms</label>
              
             <p>
+            <p>Privacy Policy & Terms and Conditions</p>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </p>
         
