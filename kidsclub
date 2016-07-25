@@ -59,16 +59,16 @@
                 <input id="fieldName" name="cm-name" type="text"/>
             </p>
             
-            <p class="large_field">
+            <p class="small_field">
                 <label for="firstName">First Name*</label><br/>
                 <input id="firstName" type="text" required placeholder="First Name" />
             </p>
-            <p class="large_field">
+            <p class="small_field">
                 <label for="lastName">Last Name*</label><br/>
                 <input id="lastName" type="text" required placeholder="Last Name"/>
             </p>
           
-            <p class="large_field">
+            <p class="small_field">
                 <label for="fieldEmail">Email*</label><br />
                 <input id="fieldEmail" name="cm-iljuul-iljuul" type="email" required placeholder="Email"/>
             </p>
