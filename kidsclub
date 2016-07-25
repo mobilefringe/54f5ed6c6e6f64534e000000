@@ -78,7 +78,7 @@
             </p>
             <p class="small_field">
                 <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
-                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" placeholder="Parent/Gaurdian's Last Name"/>
+                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
             </p>
             <p class="small_field">
                 <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
