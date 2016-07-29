@@ -162,6 +162,7 @@ label {
         else{
             alert("Please Enter Correct Verification Number");
             randomgen();
+            e.preventDefault();
         }
         
     });
