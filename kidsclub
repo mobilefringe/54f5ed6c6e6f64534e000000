@@ -108,23 +108,26 @@ label {
                 <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
             </div>
         </div>
-            
-            <p class="full_field">
+        <div class="row">    
+            <div class="col-md-12">
                 <label for="fielddhkrij">Street Address</label><br />
                 <input id="fielddhkrij" name="cm-f-dhkrij" type="text" required placeholder="Street Address"/>
-            </p>
-            <p class="small_field">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <label for="fielddhkrid">City</label><br />
                 <input id="fielddhkrid" name="cm-f-dhkrid" type="text" required placeholder= "City"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fielddhkrih">Postal Code</label><br />
                 <input id="fielddhkrih" name="cm-f-dhkrih" type="text" required placeholder="Postal Code" />
-            </p>
-             <p class="small_field">
+            </div>
+             <div class="col-md-4">
                 <label for="fielddhkrik">Phone Number</label><br />
                 <input id="fielddhkrik" name="cm-f-dhkrik" type="text" required placeholder="Phone Number" />
-            </p>
+            </div>
+        </div>
            
             
        
