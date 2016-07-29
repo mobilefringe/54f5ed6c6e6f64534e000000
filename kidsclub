@@ -154,7 +154,6 @@ label {
   
     
     $('#contest_form').submit(function (e) {
-        alert("s")
         e.preventDefault;
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             
