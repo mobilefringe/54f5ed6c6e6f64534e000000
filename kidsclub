@@ -161,7 +161,6 @@ label {
                 
             }else{
                 alert("Please enter the required fields.");
-                randomgen();
                 e.preventDefault();
             }
         }
