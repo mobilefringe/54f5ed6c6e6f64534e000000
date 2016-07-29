@@ -188,6 +188,7 @@ label {
                         }
                         
                     } else {
+                        alert("here")
                         e.preventDefault();
                         $('#contest_form').unbind('submit').submit();    
                     }    
