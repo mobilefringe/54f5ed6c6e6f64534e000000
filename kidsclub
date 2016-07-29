@@ -176,10 +176,16 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
     $('#contest_form').submit(function (e) {
         
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            var fields_entered = verify_required_fields();
-            if (!fields_entered){
-                alert("Please enter the required fields.");
-                e.preventDefault();
+            if ($('#listiljuhu').prop('checked') == true) {
+                var fields_entered = verify_required_fields();
+                if (!fields_entered){
+                    alert("Please enter the required fields.");
+                    e.preventDefault();
+                }
+            }
+            else{
+                alert('Please aggree to rules and regulations.');
+                $('#listiljuhu').focus();
             }
         }
         else{
