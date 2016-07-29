@@ -142,6 +142,18 @@ label {
                     <label for="newsletter_signup" style="display:none">Agree Terms</label>
                  
                 <p>
+                 <br>
+                <label for="newsletter_signup" style="display:none">Agree Terms</label>
+              <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;Yes, I would like to receive ongoing news related to events, promotions and special   
+  announcements from Sheridan Centre.
+            </span>
+            <br>
+            <br>
+            <span>
+                <label for="agree_terms" style="display:none">Agree Terms</label>
+              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/rules_regulations"><u>Rules and Regulations</u></a>. 
+            </span>
+            <br>
                 <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
                 <br>
                     <button class="btn btn-primary" type="submit">Submit</button>
