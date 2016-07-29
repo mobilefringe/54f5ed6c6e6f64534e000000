@@ -14,13 +14,25 @@
         display:inline-block;
         width:49%;
     }
+    
+    
+label {
+   display: inline-block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   font-size: 13px;
+}
+    
     .small_field {
-        width:32.5%;
-        display:inline-block;
+       width: 32.5%;
+   display: inline-block;
+   padding-bottom: 12px;
     }
     
     .full_field input, .large_field input, .small_field input {
-        width:98%;
+        width: 95%;
+   height: 35px;
+   font-size: 12px;
     }
     
     @media (max-width: 767px) {
