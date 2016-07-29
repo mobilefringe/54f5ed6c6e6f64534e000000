@@ -134,25 +134,28 @@ label {
                 <input id="fielddhkrik" name="cm-f-dhkrik" type="text" required placeholder="Phone Number" />
             </div>
         </div>
-           
-            
-       
-            <br>
+        <div class="row">
+            <div class="col-md-12">
                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+            </div>
+            <div class="col-md-4">  
                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                 <input type="text" id="enterVerify" name="enterVerify" />
-            <br>
-
-            <span>
                 <br>
-                <label for="newsletter_signup" style="display:none">Agree Terms</label>
-             
-            <p>
-            <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
-            <br>
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </p>
-        </form>
+            </div>
+            <div class="col-md-12">
+                <span>
+                    <br>
+                    <label for="newsletter_signup" style="display:none">Agree Terms</label>
+                 
+                <p>
+                <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
+                <br>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </p>
+            </div>
+        </div>
+    </form>
      </div>
     </div>
 </div>
