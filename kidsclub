@@ -156,6 +156,7 @@ label {
     $('#contest_form').submit(function (e) {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
+                alert("e")
                 var e = verify_required_fields();
                 alert(e)
                 if (e == true){
