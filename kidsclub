@@ -159,7 +159,7 @@ label {
                 alert("e")
                 var fields_entered = verify_required_fields();
                 alert(fields_entered)
-                if (e == true){
+                if (fields_entered == true){
                     var name = $("#firstName").val() + " " + $("#lastName").val();
                     $('input[name="cm-name"]').attr('value',name);
                     var date = new Date;
