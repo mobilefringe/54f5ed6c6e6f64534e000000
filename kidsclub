@@ -176,7 +176,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
     $('#contest_form').submit(function (e) {
         
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            if ($('#listiljuhu').prop('checked') == true) {
+            if ($('#agree_terms').prop('checked') == true) {
                 var fields_entered = verify_required_fields();
                 if (!fields_entered){
                     alert("Please enter the required fields.");
@@ -185,7 +185,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             }
             else{
                 alert('Please agree to rules and regulations.');
-                $('#listiljuhu').focus();
+                $('#agree_terms').focus();
                 e.preventDefault();
             }
         }
