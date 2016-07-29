@@ -158,7 +158,7 @@ label {
             if ($("#agree_terms").prop("checked") == true){
                 alert("e")
                 var fields_entered = verify_required_fields();
-                alert(e)
+                alert(fields_entered)
                 if (e == true){
                     var name = $("#firstName").val() + " " + $("#lastName").val();
                     $('input[name="cm-name"]').attr('value',name);
