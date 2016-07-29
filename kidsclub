@@ -140,7 +140,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             <div class="col-md-12">
                 <span>
                 <br>
-                <label for="listiljuhu"><input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from Sheridan Centre.</label>
+                <label style="font-weight:normal" for="listiljuhu"><input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from Sheridan Centre.</label>
             </span>
             <br>
             <br>
