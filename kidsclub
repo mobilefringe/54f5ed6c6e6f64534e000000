@@ -139,7 +139,7 @@ label {
             <div class="col-md-12">
                 <span>
                     <br>
-                    <label for="newsletter_signup" style="display:none">Agree Terms</label>
+                    
                    <label for="newsletter_signup" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;Yes, I would like to receive ongoing news related to events, promotions and special   
   announcements from Sheridan Centre.
