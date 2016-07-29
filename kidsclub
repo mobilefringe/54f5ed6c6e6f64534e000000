@@ -93,18 +93,21 @@ label {
                 <label for="fielddhkril">Child's Year of Birth</label><br />
                 <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Child's Year of Birth"/>
             </div>
-            <p class="small_field">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <label for="fielddhkrir">Parent/Gaurdian's First Name</label><br />
                 <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Gaurdian's First Name"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
                 <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
                 <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
-            </p>
+            </div>
+        </div>
             
             <p class="full_field">
                 <label for="fielddhkrij">Street Address</label><br />
