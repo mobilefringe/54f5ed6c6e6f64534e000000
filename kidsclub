@@ -154,7 +154,7 @@ label {
   
     
     $('#contest_form').submit(function (e) {
-        e.preventDefault;
+        e.preventDefault();
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             var fields_entered = verify_required_fields();
             alert(fields_entered)
