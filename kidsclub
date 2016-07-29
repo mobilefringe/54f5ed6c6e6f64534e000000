@@ -14,7 +14,9 @@
         display:inline-block;
         width:49%;
     }
-    
+    .full_field {
+        padding-bottom: 12px;
+    }
     
 label {
    display: inline-block;
