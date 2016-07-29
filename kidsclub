@@ -157,7 +157,13 @@ label {
         
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             var fields_entered = verify_required_fields();
-            alert(fields_entered)
+            if (fields_entered){
+                
+            }else{
+                alert("Please enter the required fields.");
+                randomgen();
+                e.preventDefault();
+            }
         }
         else{
             alert("Please Enter Correct Verification Number");
