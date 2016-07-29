@@ -2,6 +2,9 @@
     .row{
         margin-left:-15px;
         margin-right: -15px;
+    }
+    
+    .col-md-4, .col-md-12{
         margin-bottom: 20px;
     }
     
