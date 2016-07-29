@@ -207,7 +207,7 @@ label {
     
     
     function verify_required_fields (){
-        if ($("#firstName").val() != "" && $("#lastName").val() != "" && $("#fieldEmail").val() != "" && $("#fieldjrihe").val() != "" && $("#fieldjrihs").val() != "" && $("#fieldjrihg").val() != "") {
+        if ($("#fielddhkrtk").val() != "" && $("#fielddhkrtu").val() != "" && $("#fielddhkril").val() != "" && $("#fielddhkrir").val() != "" && $("#fielddhkriy").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkrij").val() != "" && $("#fielddhkrid").val() != "" && $("#fielddhkrih").val() != "" && $("#fielddhkrik").val() != "") {
             return true;
         } else {
             return false;
