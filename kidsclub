@@ -188,6 +188,7 @@ label {
                         }
                         
                     } else {
+                        e.preventDefault();
                         $('#contest_form').unbind('submit').submit();    
                     }    
                 } else {
