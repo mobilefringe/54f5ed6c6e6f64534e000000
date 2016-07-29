@@ -107,16 +107,16 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
         </div>
         <div class="row">
             <div class="col-md-4">
-                <label for="fielddhkrir">Parent/Gaurdian's First Name</label><br />
-                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Gaurdian's First Name"/>
+                <label for="fielddhkrir">Parent/Guardian's First Name</label><br />
+                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Guardian's First Name"/>
             </div>
             <div class="col-md-4">
-                <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
-                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
+                <label for="fielddhkriy">Parent/Guardian's Last Name</label><br />
+                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Guardian's Last Name"/>
             </div>
             <div class="col-md-4">
-                <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
-                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
+                <label for="fieldEmail">Parent/Guardian's Email Address</label><br />
+                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Guardian's Email Address"/>
             </div>
         </div>
        
