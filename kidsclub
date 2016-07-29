@@ -157,7 +157,7 @@ label {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
                 alert("e")
-                var e = false;
+                var fields_entered = verify_required_fields();
                 alert(e)
                 if (e == true){
                     var name = $("#firstName").val() + " " + $("#lastName").val();
