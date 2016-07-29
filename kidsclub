@@ -157,6 +157,7 @@ label {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
                 var e = verify_required_fields();
+                alert(e)
                 if (e == true){
                     var name = $("#firstName").val() + " " + $("#lastName").val();
                     $('input[name="cm-name"]').attr('value',name);
