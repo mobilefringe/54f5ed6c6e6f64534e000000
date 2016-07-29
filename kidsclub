@@ -129,10 +129,10 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12"  style="margin-bottom:0">
                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label>
             </div>
-            <div class="col-md-4" style="margin-bottom:0">
+            <div class="col-md-4">
                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                 <input type="text" id="enterVerify" name="enterVerify" />
                 
