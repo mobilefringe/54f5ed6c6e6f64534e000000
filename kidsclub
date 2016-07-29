@@ -157,10 +157,7 @@ label {
         
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             var fields_entered = verify_required_fields();
-            if (fields_entered){
-                var name = $("#firstName").val() + " " + $("#lastName").val();
-                $('input[name="cm-name"]').attr('value',name);
-            }else{
+            if (!fields_entered){
                 alert("Please enter the required fields.");
                 e.preventDefault();
             }
