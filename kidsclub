@@ -148,6 +148,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
                 <label for="agree_terms" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/rules_regulations"><u>Rules and Regulations</u></a>. 
             </span>
+            <br />
                 <p>
                 
                 <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
