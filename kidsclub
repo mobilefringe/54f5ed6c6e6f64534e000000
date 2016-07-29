@@ -12,7 +12,7 @@
     
     .large_field{
         display:inline-block;
-        width:100%;
+        width:49%;
     }
     .full_field {
         padding-bottom: 12px;
