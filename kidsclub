@@ -4,6 +4,10 @@
         margin-right: -15px;
         margin-bottom: 20px;
     }
+    
+    .row input{
+        width:100%;
+    }
 
     .contest_description{
         margin-bottom:35px;
