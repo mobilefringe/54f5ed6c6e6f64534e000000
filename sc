@@ -130,7 +130,7 @@
     $(document).ready(function() {
         function renderAll (){
             var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
+            var slug = "sheridancentre-enter-to-win-a-50-gift-card";
             var contestDetails = getContestBySlug(slug);
             if (contestDetails) {
                 renderPageData('#main_content','#contest_template',contestDetails, 'contestDetails')
