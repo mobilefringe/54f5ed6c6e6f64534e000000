@@ -111,7 +111,7 @@
             <br>
             <span>
                 <label for="agree_terms" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "www.sheridancentre.ca/pages/sheridancentre-sc-b2s-easy-contests-rules-and-regulations"><u>rules and regulations</u></a>. 
+              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-sc-b2s-easy-contests-rules-and-regulations"><u>rules and regulations</u></a>. 
             </span>
             <br>
             <br>
