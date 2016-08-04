@@ -72,12 +72,12 @@
             <input id="property_id" name="contest[property_id]" style="display:none" value="{{property_id}}"/>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
             <p class="large_field">
-                <label for="first_name">First Name*</label><br/>
+                <label for="first_name">Name</label><br/>
                 <input id="first_name" type="text" name="contest[first_name]"required placeholder="First Name" />
             </p>
             <p class="large_field">
-                <label for="last_name">Last Name*</label><br/>
-                <input id="last_name" type="text" name="contest[last_name]" required placeholder="Last Name"/>
+                <label for="postal_name">Postal Code</label><br/>
+                <input id="postal_name" type="text" name="contest[postal_name]" required placeholder="Last Name"/>
             </p>
           
             <p class="large_field">
