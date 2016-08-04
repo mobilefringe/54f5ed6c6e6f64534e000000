@@ -67,7 +67,7 @@
      <br>
      <div class="contest_form_div">
            <p class="contest_description">{{{rich_description}}}</p>
-
+<br>
          <form id="contest_form">
             <input id="property_id" name="contest[property_id]" style="display:none" value="{{property_id}}"/>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
