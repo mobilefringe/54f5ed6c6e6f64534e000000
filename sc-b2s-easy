@@ -73,7 +73,7 @@
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
             <p class="large_field">
                 <label for="first_name">Name*</label><br/>
-                <input id="first_name" type="text" name="contest[first_name]"required placeholder="First Name" />
+                <input id="first_name" type="text" name="contest[first_name]"required placeholder="Name" />
             </p>
             <p class="large_field">
                  <label for="postal_code">Postal Code*</label><br />
@@ -255,7 +255,7 @@
         
         
         function verify_required_fields (){
-            if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
+            if ($("#first_name").val()  != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
                 return true;
             } else {
                 return false;
