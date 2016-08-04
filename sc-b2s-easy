@@ -72,8 +72,8 @@
             <input id="property_id" name="contest[property_id]" style="display:none" value="{{property_id}}"/>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
             <p class="large_field">
-                <label for="first_name">Name*</label><br/>
-                <input id="first_name" type="text" name="contest[first_name]"required placeholder="Name" />
+                <label for="name">Name*</label><br/>
+                <input id="name" type="text" name="contest[first_name]"required placeholder="Name" />
             </p>
             <p class="large_field">
                  <label for="postal_code">Postal Code*</label><br />
@@ -85,8 +85,8 @@
                 <input id="email" name="contest[email]" type="text" required placeholder="Email"/>
             </p>
             <p class="large_field">
-                <label for="phone">Name of School*</label><br />
-                <input id="phone" name="contest[phone]" type="text" required placeholder="Phone Number"/>
+                <label for="notes">Name of School*</label><br />
+                <input id="notes" name="contest[notes]" type="text" required placeholder="Name of School"/>
             </p>
            
             <br>
