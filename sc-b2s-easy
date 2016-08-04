@@ -72,7 +72,7 @@
             <input id="property_id" name="contest[property_id]" style="display:none" value="{{property_id}}"/>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
             <p class="large_field">
-                <label for="first_name">Name</label><br/>
+                <label for="first_name">Name*</label><br/>
                 <input id="first_name" type="text" name="contest[first_name]"required placeholder="First Name" />
             </p>
             <p class="large_field">
