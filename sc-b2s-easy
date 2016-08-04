@@ -76,8 +76,8 @@
                 <input id="first_name" type="text" name="contest[first_name]"required placeholder="First Name" />
             </p>
             <p class="large_field">
-                <label for="postal_name">Postal Code</label><br/>
-                <input id="postal_name" type="text" name="contest[postal_name]" required placeholder="Postal Code"/>
+                 <label for="postal_code">Postal Code*</label><br />
+                <input id="postal_code" name="contest[postal_code]" type="text" required placeholder="Postal Code"/>
             </p>
           
             <p class="large_field">
