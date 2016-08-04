@@ -66,7 +66,7 @@
         <img class="contest_image" src="{{alt_photo_url}}" />
      <br>
      <div class="contest_form_div">
-           <p class="contest_description">{{rich_description}}</p>
+           <p class="contest_description">{{description}}</p>
 
          <form id="contest_form">
             <input id="property_id" name="contest[property_id]" style="display:none" value="{{property_id}}"/>
