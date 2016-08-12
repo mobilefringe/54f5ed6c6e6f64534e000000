@@ -14,7 +14,7 @@
                <div class="row">
                     Your subscription has been confirmed. You've been added to our list and will hear from us soon.
                     <br><br>
-                    <a href="/kids_club"><button class="btn btn-primary" >Back to Kids Club Form</button></a>
+                    <a href="/kidsclub"><button class="btn btn-primary" >Back to Kids' Club Form</button></a>
                </div>
           </section>
         </div>
