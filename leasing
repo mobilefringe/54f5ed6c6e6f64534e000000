@@ -1,0 +1,131 @@
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div  id="main_content" style="display:none">
+    <ul class="breadcrumb">
+        <li><a href="/home">Home</a> </li>
+        <li class="active">Leasing</li>
+    </ul>
+    <div class="page_banner">
+        leasing
+    </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54edfd7a6e6f640717000000/2804b99a4a7c2ed210ec0bfcd23dfaee/Banner-Image-008_edited.jpg"/>
+            <p class="columns_2">
+                
+               <H2>Market Summary</H2>
+               <p>Located on Erin Mills Parkway just north of the QEW, Sheridan Centre is in a prime location within an established community and with easy highway access for residents in the marketplace.</p>
+               <br>
+               <strong>Total GLA:  </strong>548,267 square feet <br><br>
+               
+               
+              
+         
+          
+          <section class="article-text">
+               
+                        <br>
+                        <p style="margin-bottom:0"><strong>Major Tenants:</strong></p>
+                        <p>Target
+                            <br>Metro
+                            <br>Shoppers Drug Mart
+    
+                            
+                           
+                        </p>    
+                        <br>
+                       
+                   
+                        <table>
+                            <tr>
+                                <td style="width:215px"><strong>Demographics:</strong></td>
+                                <td style="width:100px">1km</td>
+                                <td style="width:100px">3km</td>
+                                 <td style="width:100px">5km</td>
+                            </tr>
+                            <tr>
+                                <td style="width:215px"><strong>Total Population:</strong></td>
+                                <td style="width:100px">8,890</td>
+                                <td style="width:100px">64,306</td>
+                                <td style="width:100px">150,368</td>
+                            </tr>
+                            <tr>
+                                <td style="width:215px"><strong>Total Households:</strong></td>
+                                <td style="width:100px">2,812</td>
+                                <td style="width:100px">21,605</td>
+                                <td style="width:100px">47,806</td>
+                            </tr>
+                            <tr>
+                                <td style="width:215px"><strong>Household Average Income:</strong></td>
+                                <td style="width:100px">$83,603</td>
+                                <td style="width:100px">$102,053</td>
+                                <td style="width:100px">$111,153</td>
+                            </tr>
+                        </table>
+                        <br>
+             
+                        <h3>For Leasing Inquiries Contact:</h3>
+                  
+                        <p>Wyatt, Dave
+                        <br>Senior Vice-President, Retail Leasing
+                        <br>905-271-5891
+                        <br><a href="mailto:dwyatt@bentallkennedy.com"><strong>dwyatt@bentallkennedy.com</strong></a>
+                        <br>
+                        <br>
+                        <a href="//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/dd3df6231fcdfe5a03c23531223c5538/Sheridan%20Centre%20Plan%20Site%20January%202015.pdf" target="blank"><strong>Click to download site plan PDF</strong></a>
+                            
+                        </p>
+        </div>
+         
+        <div class="right_column">
+            <p class="right_column_header">centre information</p>
+            <div id="centre_info_container">
+                <script id="centre_info_template" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+            </div>
+            
+            
+        </div>
+  
+</div>
+<script>
+    $(document).ready(function() {
+        function renderAll (){
+            var propertyDetails = getPropertyDetails();
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            $("#loading_screen").hide();
+            $("#main_content").show();
+        }
+        
+    
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "property_details"){
+                item_list.push(collection);
+                collection = []
+                collection = item_list;
+            }
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+
+        loadMallData(renderAll);  
+
+    
+  
+    });
+    
+</script>
