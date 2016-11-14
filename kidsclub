@@ -140,7 +140,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             <div class="col-md-12">
                 <span>
                 <br>
-                <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="cm-f-ktolj value="true" type="checkbox" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>
+                <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="cm-f-ktolj" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>
             </span>
             <br>
             <br>
