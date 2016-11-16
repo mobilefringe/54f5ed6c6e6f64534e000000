@@ -215,7 +215,7 @@
         
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
-            var host = "http://sheridancentre.mallmaverickstaging.com"
+            var host = "https://sheridancentre.mallmaverickstaging.com"
             $.ajax({
                 url: host+"/newsletter_no_captcha",
                 type: "POST",
