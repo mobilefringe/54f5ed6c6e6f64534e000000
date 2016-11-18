@@ -86,37 +86,32 @@ label {
 Sign up on-line and you will start receiving a monthly email letting you know when the next event is coming up. When you come to your first event, let the staff know that you signed up on-line and your child will receive a free backpack and membership card entitling them to more gifts when they reach 10 and 20 visits.</p>
     <form action="//sheridancentre.mallmaverick.com/contests/sheridancentre-kids-club/json_entry" method="post" id="contest_form">
         <div class="row">
-            <p style="display:none">
-                <label for="fieldName">Name</label><br />
-                <input id="fieldName" name="cm-name" type="text"/>
-            </p>
-            
             <div class="col-md-4">
-                <label for="fielddhkrtk">Child's First Name</label><br/>
-                <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required placeholder="Child's First Name" />
+                <label for="fielddhkjhh">Child's First Name</label><br/>
+                <input id="fielddhkjhh" name="child_first_name" type="text" required placeholder="Child's First Name" />
             </div>
             <div class="col-md-4">
-                <label for="fielddhkrtu">Child's Last Name</label><br/>
-                <input id="fielddhkrtu" name="cm-f-dhkrtu" type="text" required placeholder="Child's Last Name"/>
+                <label for="fielddhkjhk">Child's Last Name</label><br/>
+                <input id="fielddhkjhk" name="child_last_name" type="text" required placeholder="Child's Last Name"/>
             </div>
           
             <div class="col-md-4">
-                <label for="fielddhkril">Child's Year of Birth</label><br />
-                <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Child's Year of Birth"/>
+                <label for="fielddhkjhu">Child's Year of Birth</label><br />
+                <input id="fielddhkjhu" name="child_birthday" type="text" required placeholder="Child's Year of Birth"/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <label for="fielddhkrir">Parent/Guardian's First Name</label><br />
-                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Guardian's First Name"/>
+                <label for="fielddhkjkl">Parent/Guardian's First Name</label><br />
+                <input id="fielddhkjkl" name="parent_first_name" type="text" required placeholder="Parent/Guardian's First Name"/>
             </div>
             <div class="col-md-4">
-                <label for="fielddhkriy">Parent/Guardian's Last Name</label><br />
-                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Guardian's Last Name"/>
+                <label for="fielddhkjkr">Parent/Guardian's Last Name</label><br />
+                <input id="fielddhkjkr" name="parent_last_name" type="text" required placeholder="Parent/Guardian's Last Name"/>
             </div>
             <div class="col-md-4">
                 <label for="fieldEmail">Parent/Guardian's Email Address</label><br />
-                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Guardian's Email Address"/>
+                <input id="fieldEmail" name="parent_email" type="email" required placeholder="Parent/Guardian's Email Address"/>
             </div>
         </div>
        
