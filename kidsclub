@@ -169,25 +169,38 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
   
     
     $('#contest_form').submit(function (e) {
-        
+        e.preventDefault();
+        var form_action = $(this).attr('action');
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($('#agree_terms').prop('checked') == true) {
                 var fields_entered = verify_required_fields();
                 if (!fields_entered){
                     alert("Please enter the required fields.");
-                    e.preventDefault();
+                }
+                else{
+                    var post_data = {};
+                    var form_data = $('#contest_form').serializeObject();
+                    delete(form_data.verifyNumHidden);
+                    delete(form_data.enterVerify)
+                    post_data.json = JSON.stringify(form_data);
+                    $.post(form_action, post_data, function(data){
+                        if(data.message == "success"){
+                            window.location = "/kids_club_thank_you";
+                        }
+                        else{
+                            alert("Registration failed! Please try again later.")
+                        }
+                    });
                 }
             }
             else{
                 alert('Please agree to rules and regulations.');
                 $('#agree_terms').focus();
-                e.preventDefault();
             }
         }
         else{
             alert("Please Enter Correct Verification Number");
             randomgen();
-            e.preventDefault();
         }
         
     });
