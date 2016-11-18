@@ -79,47 +79,52 @@ label {
         KIDS CLUB
     </div>
     <div class="inside_page_content">
-        <img class="contest_image" src="//kodekloud.s3.amazonaws.com/sites/54f605386e6f6412de000000/image/jpeg/undefined/milton_kidsclub.jpg" />
+        <img class="contest_image" src="//codecloud.cdn.speedyrails.net/sites/57f7d1686e6f640d53420000/image/jpeg/undefined/sheridan_kidsclub.jpg" />
      <br>
      <div class="contest_form_div">
-           <p class="contest_description">Register now for the Milton Monkeys Kids’ Club – it’s fun & it’s free!
+           <p class="contest_description">Register now for the Sheridan Sharks Kids’ Club – it’s fun & it’s free!
 Sign up on-line and you will start receiving a monthly email letting you know when the next event is coming up. When you come to your first event, let the staff know that you signed up on-line and your child will receive a free backpack and membership card entitling them to more gifts when they reach 10 and 20 visits.</p>
-    <form action="//sheridancentre.mallmaverick.com/contests/sheridancentre-kids-club /json_entry" method="post" id="contest_form">
+    <form action="//mobilefringe.createsend.com/t/d/s/ukiiyu/" method="post" id="contest_form">
         <div class="row">
+            <p style="display:none">
+                <label for="fieldName">Name</label><br />
+                <input id="fieldName" name="cm-name" type="text"/>
+            </p>
+            
             <div class="col-md-4">
-                <label for="fielddhkjhh">Child's First Name</label><br/>
-                <input id="fielddhkjhh" name="child_first_name" type="text" required placeholder="Child's First Name" />
+                <label for="fielddhkrtk">Child's First Name</label><br/>
+                <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required placeholder="Child's First Name" />
             </div>
             <div class="col-md-4">
-                <label for="fielddhkjhk">Child's Last Name</label><br/>
-                <input id="fielddhkjhk" name="child_last_name" type="text" required placeholder="Child's Last Name"/>
+                <label for="fielddhkrtu">Child's Last Name</label><br/>
+                <input id="fielddhkrtu" name="cm-f-dhkrtu" type="text" required placeholder="Child's Last Name"/>
             </div>
           
             <div class="col-md-4">
-                <label for="fielddhkjhu">Child's Year of Birth</label><br />
-                <input id="fielddhkjhu" name="child_birthday" type="text" required placeholder="Child's Year of Birth"/>
+                <label for="fielddhkril">Child's Year of Birth</label><br />
+                <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Child's Year of Birth"/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <label for="fielddhkjkl">Parent/Guardian's First Name</label><br />
-                <input id="fielddhkjkl" name="parent_first_name" type="text" required placeholder="Parent/Guardian's First Name"/>
+                <label for="fielddhkrir">Parent/Guardian's First Name</label><br />
+                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Guardian's First Name"/>
             </div>
             <div class="col-md-4">
-                <label for="fielddhkjkr">Parent/Guardian's Last Name</label><br />
-                <input id="fielddhkjkr" name="parent_last_name" type="text" required placeholder="Parent/Guardian's Last Name"/>
+                <label for="fielddhkriy">Parent/Guardian's Last Name</label><br />
+                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Guardian's Last Name"/>
             </div>
             <div class="col-md-4">
                 <label for="fieldEmail">Parent/Guardian's Email Address</label><br />
-                <input id="fieldEmail" name="parent_email" type="email" required placeholder="Parent/Guardian's Email Address"/>
+                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Guardian's Email Address"/>
             </div>
         </div>
        
         <div class="row">
             
             <div class="col-md-4">
-                <label for="fielddhkjkt">Postal Code</label><br />
-                <input id="fielddhkjkt" name="postal_code" type="text" required placeholder="Postal Code" />
+                <label for="fielddhkrih">Postal Code</label><br />
+                <input id="fielddhkrih" name="cm-f-dhkrih" type="text" required placeholder="Postal Code" />
             </div>
             
         </div>
@@ -135,13 +140,13 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             <div class="col-md-12">
                 <span>
                 <br>
-                <label style="font-weight:normal" for="listiljuii"><input id="listiljuii" name="newsletter" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from Milton Mall.</label>
+                <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="cm-f-ktolj" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>
             </span>
             <br>
             <br>
             <span>
                 <label for="agree_terms" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/milton-privacy-policy"><u>Privacy Policy</u></a>. 
+              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>. 
             </span>
             <br />
                 <p>
@@ -169,45 +174,32 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
   
     
     $('#contest_form').submit(function (e) {
-        e.preventDefault();
-        var form_action = $(this).attr('action');
+        
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($('#agree_terms').prop('checked') == true) {
                 var fields_entered = verify_required_fields();
                 if (!fields_entered){
                     alert("Please enter the required fields.");
-                }
-                else{
-                    var post_data = {};
-                    var form_data = $('#contest_form').serializeObject();
-                    delete(form_data.verifyNumHidden);
-                    delete(form_data.enterVerify)
-                    post_data.json = JSON.stringify(form_data);
-                    $.post(form_action, post_data, function(data){
-                        if(data.message == "success"){
-                            window.location = "/kids_club_thank_you";
-                        }
-                        else{
-                            alert("Registration failed! Please try again later.")
-                        }
-                    });
+                    e.preventDefault();
                 }
             }
             else{
                 alert('Please agree to rules and regulations.');
                 $('#agree_terms').focus();
+                e.preventDefault();
             }
         }
         else{
             alert("Please Enter Correct Verification Number");
             randomgen();
+            e.preventDefault();
         }
         
     });
     
     
     function verify_required_fields (){
-        if ($("#fielddhkjhh").val() != "" && $("#fielddhkjhk").val() != "" && $("#fielddhkjhu").val() != "" && $("#fielddhkjkl").val() != "" && $("#fielddhkjkr").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkjky").val() != "" && $("#fielddhkjkj").val() != "" && $("#fielddhkjkt").val() != "" && $("#fielddhkjkd").val() != "") {
+        if ($("#fielddhkrtk").val() != "" && $("#fielddhkrtu").val() != "" && $("#fielddhkril").val() != "" && $("#fielddhkrir").val() != "" && $("#fielddhkriy").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkrij").val() != "" && $("#fielddhkrid").val() != "" && $("#fielddhkrih").val() != "" && $("#fielddhkrik").val() != "") {
             return true;
         } else {
             return false;
@@ -233,7 +225,6 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
     }
     
     function get_month (id){
-        var month = "" ;
         switch(id) {
             case 0:
                 month = "Jan"
