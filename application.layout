@@ -95,7 +95,7 @@
             imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
         });      
     });
-    setEndPoint('https://sheridancentre.mallmaverickstaging.com/api/v2/sheridancentre/all.json');
+    setEndPoint('https://twinpines.mallmaverickstaging.com/api/v3/twinpines/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
