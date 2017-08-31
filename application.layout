@@ -97,7 +97,7 @@
             });      
         });
         
-        setEndPoint('//twinpines.mallmaverick.com/api/v4/twinpines/all.json');
+        setEndPoint('//sheridancentre.mallmaverick.com/api/v4/sheridancentre/all.json');
     </script>
     <style>
         /*custom styles*/
