@@ -34,12 +34,8 @@
     <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">
     <link href="//bkindoortemplate.codecloudapp.com/application.css" rel="stylesheet" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
-
-
-<!-- DatePicker -->
-<link href="//kodekloud.s3.amazonaws.com/sites/550c63266e6f6462fa000000/d3888fcd0fecce8e286f68402e5cdea4/bootstrap-datepicker3.css" rel="stylesheet">
+    <!-- DatePicker -->
+    <link href="//kodekloud.s3.amazonaws.com/sites/550c63266e6f6462fa000000/d3888fcd0fecce8e286f68402e5cdea4/bootstrap-datepicker3.css" rel="stylesheet">
 
 
     <!-- jQuery Version 1.11.0 -->
@@ -48,6 +44,7 @@
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
     
     <!--Mustache is a client side templating engine //github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
