@@ -362,17 +362,9 @@ background-color: #FFFFFF ;
                         } else {
                         	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                         }
-                        if (val.description.length > 110) {
+                        if(val.description.length > 110){
                            val.description =  val.description.substring(0,100)+'...';
                         } 
-                        // if ((val.promo_image_url).indexOf('missing.png') > -1){
-                        //     var pathArray = window.location.pathname.split( '/' );
-                        //     var slug = pathArray[pathArray.length-1];
-                        //     var store_details = getStoreDetailsBySlug(slug);
-                        //     val.alt_promo_image_url = getImageURL(store_details.store_front_url);
-                        // } else {
-                        //     val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
-                        // }
                         if ((val.promo_image_url).indexOf('missing.png') > -1){
                             var pathArray = window.location.pathname.split( '/' );
                             var slug = pathArray[pathArray.length-1];
