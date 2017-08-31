@@ -1,0 +1,448 @@
+<style>
+    .demo1{
+float: left;
+ margin-bottom:29px;
+  height: 318px;
+    width: 562px;
+background-color: #FFFFFF ;
+  border: 1px solid #b2aaab;
+
+}
+
+.page_banner {
+    line-height:1;
+    padding-top:30px;
+}
+.banner_1{
+    margin-bottom:5px;
+}
+.banner_2{
+    font-size:12px;
+}
+.froala-element img{
+    cursor:default !important;
+}
+
+.store_map{
+    margin-bottom:30px;
+    overflow:hidden;
+    height:inherit;
+}
+.marker {
+    background: url("//kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 75px;
+    margin-top: 5px;
+    outline: medium none;
+    text-indent: -9999px;
+    width: 50px;
+}
+
+@media (max-width: 767px) {
+    #store_desc_container{
+        display:none !important;
+    }
+    
+    .right_column{
+        display:block !important;
+    }
+    #mobile_desc{
+        display: block !important;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .mobile_promo_divs{
+        display:block !important;
+    }
+    .desktop_promo_divs{
+        display:none !important;
+    }
+}
+</style>
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<div id="loading_screen">
+    <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+</div>
+<div id="pop-over">
+    <span class="pull-left">
+        <p id="pop-over-map-name">Default Name</p>
+        <p id="pop-over-map-phone">Phone Number</p>
+    </span>
+    <span class="pullright"><img alt="arrow" src="//testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/btn_search_arrow.png"></span>
+</div>
+<div id="store_title_container">
+    <script id="store_title_template" type="x-tmpl-mustache">
+        <ul class="breadcrumb">
+            <li><a href="/home">Home</a> </li>
+            <li><a href="/stores">Store Directory</a></li>
+            <li class="active">{{name}}</li>
+        </ul>
+        <div class="page_banner">
+                <p class="banner_1">{{name}} </p>
+                
+        </div>
+    </script>
+</div>
+<div  id="main_content" style="display:none">
+    <div class="inside_page_content">
+        <div class="left_column">
+            <div class="store_map" id="store_map">
+                <div id="mapsvg_store_detail"></div>
+            </div>
+            <div id="store_desc_container">
+                <script id="store_desc_template" type="x-tmpl-mustache">
+                    <p>{{description}}</p>
+                </script>
+            </div>
+            <div class="desktop_promo_divs">
+                <p class="list_section_header" style="display:none" id="promo_header" >Promotions</p>
+                <div class="promo_list_div" id="promo_list_container">
+                    <script id="promo_list_template" type="x-tmpl-mustache/text">
+                        <div class="promo_inside_content">
+                        <div class="promo_image_div">
+                            <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                                <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+                            </a> 
+                        </div>
+                        <div class="promo_desc_box">
+                            <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+                            <p class="directory_content promo_date">{{dates}}</p>
+                            <p>{{description}}</p>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> </div>
+                        </div>
+                    </div>
+                    </script>
+                </div>
+                
+                <p class="list_section_header" style="display:none" id="job_header" >Jobs</p>
+                <div class="promo_list_div" id="job_list_container">
+                    <script id="job_list_template" type="x-tmpl-mustache/text">
+                        <div class="promo_inside_content">
+                            <div class="promo_desc_box" style="width:100%">
+                                <a href="../jobs/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+                                <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px">Read More</a></p>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="right_column">
+            <div id="store_detail_container">
+                <script id="store_detail_template" type="x-tmpl-mustache/text">
+                    <img class="detail_logo" src="{{alt_store_front_url}}">
+                    <p class="directory_content" id="mobile_desc" style="display:none">{{description}}</p>
+                    <p class="right_column_header" id="phone_label">Phone</p>
+                    <p class="directory_content">{{phone}}</p>
+                    <br>
+                    <p class="right_column_header" id="email_label">Email</p>
+                    <p class="directory_content">{{email}}</p>
+                </script>
+            </div>
+                            
+            <p class="right_column_header">Hours</p>
+            <div id="store_hours_container">
+                <script id="store_hours_template" type="x-tmpl-mustache/text">
+                    <li class="directory_content" style="list-style:none">{{h}}</li>
+                </script>
+            </div>
+            <br>
+            <div id="store_detail_container2">
+                <script id="store_detail_template2" type="x-tmpl-mustache/text">
+                  <a style="display:none" id="store_website_link" href="//{{website}}" target="_blank" class="btn-primary center-block btn-lg">Visit Store Site</a> 
+                </script>
+            </div>
+            
+            <div class="mobile_promo_divs" style="display:none">
+                <p class="list_section_header" style="display:none" id="mobile_promo_header" >Promotions</p>
+                <div class="promo_list_div" id="mobile_promo_list_container">
+                    <script id="mobile_promo_list_template" type="x-tmpl-mustache/text">
+                        <div class="promo_inside_content">
+                        <div class="promo_image_div">
+                            <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                                <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+                            </a> 
+                        </div>
+                        <div class="promo_desc_box">
+                            <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+                            <p class="directory_content promo_date">{{dates}}</p>
+                            <p>{{description}}</p>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> </div>
+                        </div>
+                    </div>
+                    </script>
+                </div>
+                
+                <p class="list_section_header" style="display:none" id="mobile_job_header" >Jobs</p>
+                <div class="promo_list_div" id="mobile_job_list_container">
+                    <script id="mobile_job_list_template" type="x-tmpl-mustache/text">
+                        <<div class="promo_inside_content">
+                            <div class="promo_desc_box" style="width:100%">
+                                <a href="../jobs/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
+                                <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px">Read More</a></p>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
+<link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+
+<script>
+    $(document).ready(function() {
+        function renderPageData(){
+            //renders the store list by referencing the template id and the html id
+            //for where to place the rendered content. See mallmaverick.js for implementation
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            store_details.x_coordinate = store_details.x_coordinate - 17;
+            store_details.y_coordinate = store_details.y_coordinate - 75;
+
+            var store_promos = getPromotionsForIds(store_details.promotions);
+            store_promos = store_promos.reverse();
+            promo_array = []
+            $.each( store_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    promo_array.push(val)
+                } 
+            });
+            store_promos = promo_array;
+            
+            var jobs = getJobsForIds(store_details.jobs);
+            jobs = jobs.reverse();
+            jobs_array = []
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    jobs_array.push(val)
+                } 
+            });
+            jobs = jobs_array;
+            
+            $('#loading_screen').hide();
+            $('#main_content').fadeIn();
+            
+            renderTemplate("#store_title_container","#store_title_template", store_details, "store_details");
+            renderTemplate("#store_desc_container", "#store_desc_template", store_details, "store_details");
+            renderTemplate("#store_detail_container","#store_detail_template", store_details, "store_details");
+            renderTemplate("#store_hours_container","#store_hours_template", store_details, "hours");
+            renderTemplate("#store_detail_container2","#store_detail_template2", store_details, "store_details");
+            renderTemplate("#promo_list_container","#promo_list_template", store_promos, "promotions");
+            renderTemplate("#job_list_container","#job_list_template", jobs, "jobs");
+            renderTemplate("#mobile_promo_list_container","#mobile_promo_list_template", store_promos, "promotions");
+            renderTemplate("#mobile_job_list_container","#mobile_job_list_template", jobs, "jobs");
+            // renderStoreDetailsTemplate('#store_deatils_map_template','#store_map',store_details);
+            
+            $("#pop-over").hide();
+            
+            regions = {};
+            var stores = getStoresList();
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            load_map(regions, store_details);
+        }
+        
+        loadMallData(renderPageData);
+        
+        function renderTemplate(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "store_details"){
+                item_list.push(collection)
+                $.each( item_list , function( key, val ) {
+                    if (val.phone){
+                        $("#phone_label").show();
+                    } else {
+                        $("#phone_label").hide();
+                    }
+                    
+                    if (val.email){
+                        $("#email_label").show();
+                    } else {
+                        $("#email_label").hide();
+                    }
+                    switch(val.z_coordinate) {
+                        case 0: 
+                            val.z_coordinate = "B2"
+                            break;
+                        case 1:
+                            val.z_coordinate = "B1"
+                            break;
+                        case 2:
+                            val.z_coordinate = "Level 1"
+                            break;
+                        case 3:
+                            val.z_coordinate = "Level 2"
+                            break;
+                        case 4:
+                            val.z_coordinate = "Level 3"
+                            break;
+                        case 5:
+                            val.z_coordinate = "Level 4"
+                            break;
+                        case 6:
+                            val.z_coordinate = "Level 5"
+                            break;
+                    }
+                    if ((val.store_front_url).indexOf('missing.png') > -1){ 
+                        val.alt_store_front_url = "//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/5ea9c7428579079f5e802630ec24f59f/sheridan.png" 
+                    } else { 
+                        val.alt_store_front_url = getImageURL(val.store_front_url); 
+                    }
+                    
+                    val.hours = getHoursForStoreSlug(val.slug).sortBy(function(o){ return o.day_of_week });
+                    var rendered = Mustache.render(template_html,val);
+                    item_rendered.push(rendered);
+                });
+            } else if (type == "hours"){
+                // hours = getHoursForIds(collection.store_hours)
+                hours = getHoursForStoreSlug(collection.slug).sortBy(function(o){ return o.day_of_week });
+                $.each( hours , function( key, val ) {
+                    switch(val.day_of_week) {
+                        case 0:
+                            val.day = "Sunday"
+                            break;
+                        case 1:
+                            val.day = "Monday"
+                            break;
+                        case 2:
+                            val.day = "Tuesday"
+                            break;
+                        case 3:
+                            val.day = "Wednesday"
+                            break;
+                        case 4:
+                            val.day = "Thursday"
+                            break;
+                        case 5:
+                            val.day = "Friday"
+                            break;
+                        case 6:
+                            val.day = "Saturday"
+                            break;
+                    }
+                    if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.h = val.day + ": " + open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
+                    } else {
+                        val.h = val.day+": Closed"
+                    }
+                    var rendered = Mustache.render(template_html,val);
+                    item_rendered.push(rendered);
+                });
+            } else {
+                $.each( collection , function( key, val ) {
+                    if (type == "promotions"){
+                        var start = moment(val.start_date).tz(getPropertyTimeZone());
+                        var end = moment(val.end_date).tz(getPropertyTimeZone());
+                        if (start.format("DMY") == end.format("DMY")){
+                        	val.dates = start.format("MMM D");
+                        } else {
+                        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+                        }
+                        if (val.description.length > 110) {
+                           val.description =  val.description.substring(0,100)+'...';
+                        } 
+                        if ((val.promo_image_url).indexOf('missing.png') > -1){
+                            var pathArray = window.location.pathname.split( '/' );
+                            var slug = pathArray[pathArray.length-1];
+                            var store_details = getStoreDetailsBySlug(slug);
+                            val.alt_promo_image_url = getImageURL(store_details.store_front_url);
+                        } else {
+                            val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
+                        }
+                        $("#promo_header").show();   
+                        $("#mobile_promo_header").show();  
+                    }
+                    if (type == "jobs") {
+                        var pathArray = window.location.pathname.split( '/' );
+                        var slug = pathArray[pathArray.length-1];
+                        var store_details = getStoreDetailsBySlug(slug);
+                        val.image_url = getImageURL(store_details.store_front_url);
+                        $("#job_header").show();  
+                        $("#mobile_job_header").show(); 
+                    }
+                    var rendered = Mustache.render(template_html,val);
+                    item_rendered.push(rendered);
+                });
+            }
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            if (type == "store_details"){
+                if (collection.website != "" && collection.website != undefined){
+                    $("#store_website_link").show();
+                }
+            }
+        }
+    });
+    
+    function load_map(reg, store_details, h, w){
+        this_region = {};
+        this_region = store_details.svgmap_region;
+        map = $('#mapsvg_store_detail').mapSvg({
+            source: getSVGMapURL(),
+            colors: {stroke: '#aaa', hover: 0, selected: '#ce3135'},
+            disableAll: true,
+            height:h,
+            width:w,
+            regions: reg,
+            tooltipsMode:'custom',
+            loadingText: "loading...",
+            zoom: true,
+            zoomButtons: {'show': true,'location': 'right' },
+            pan:true,
+            cursor:'pointer',
+            responsive:true,
+            zoomLimit: [0,10]
+        });
+        map.setViewBox(store_details.svgmap_region);
+        map.selectRegion(store_details.svgmap_region);
+        drop_pin(store_details.svgmap_region, map);
+        
+    }
+    
+    function drop_pin(id, map){
+        var coords = map.get_coords(id);
+        var height = parseInt(coords["height"])
+        var width = parseInt(coords["width"])
+        var x_offset = (parseInt(width) / 2);
+        var y_offset = (parseInt(height) /2);
+        
+        map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+                  attrs: {
+                            src:  '//codecloud.cdn.speedyrails.net/sites/570d369d6e6f643d60030000/image/png/1463000912000/pin2.png'     // image for marker
+                          }
+            }
+            ])
+        map.setViewBox(id);
+        map.selectRegion(id);
+        $('#btnZoomIn').click();
+        $('#btnZoomIn').click();
+        $('#btnZoomIn').click();
+    }
+    
+</script>
+
