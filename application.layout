@@ -553,6 +553,7 @@
             });
             $(container).html(item_rendered.join(''));
         }
+        
         // function getImageURL(existing_url){
         //     if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
         //         //css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
