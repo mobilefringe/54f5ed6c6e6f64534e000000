@@ -117,7 +117,8 @@
             background:white;
         }
         .navbar a.navbar-brand img {
-            width:190px !important;
+            width:150px !important;
+            padding-left:10px;
         }
         header{
             background:#253a80;
