@@ -122,10 +122,7 @@
         header{
             background:#253a80;
         }
-        .navbar a.navbar-brand img {
-    width: 150px;
-    padding-left: 10px;
-}
+        
         .main_window{
             border:40px solid #b9b7d0;
         }
