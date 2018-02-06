@@ -303,7 +303,7 @@
                </div>
           </div>
           <div id="social_media_wrapper"> <a href="//www.facebook.com/SheridanCentreMississauga" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="//twitter.com/SheridanCentre" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a></div>
-          <a href="//bentallkennedy.com/" target="_blank"><img class="property_logo" alt="logo" src="//codecloud.cdn.speedyrails.net/sites/57f7d1686e6f640d53420000/image/png/undefined/bental-logo2.png"/>
+          <a href="//bentallkennedy.com/" target="_blank">
           <div class="bk_logo_svg"></div></a>
      </div>
 </header>
