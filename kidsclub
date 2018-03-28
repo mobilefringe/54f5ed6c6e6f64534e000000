@@ -79,16 +79,16 @@
             <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A448ECC702671075C1F514B75C8366E30E3883B54977488673AE6D67F1A76BEEC9B0A41CA8F30072CAB1E480EE225E72C">
                 <div class="row">
                     <div class="col-md-4">
-                        <label for="fielddhkrtk">Child's First Name</label><br />
-                        <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" />
+                        <label for="fielddhkrtk">Child's First Name *</label><br />
+                        <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required />
                     </div>
                     <div class="col-md-4">
-                        <label for="fieldEmail">Parent/Guardian's Email Address</label><br />
+                        <label for="fieldEmail">Parent/Guardian's Email Address *</label><br />
                         <input id="fieldEmail" class="js-cm-email-input" name="cm-ukiiyu-ukiiyu" type="email" required /> 
                     </div>
                     <div class="col-md-4">
-                        <label for="fielddhkrih">Postal Code</label><br />
-                        <input id="fielddhkrih" name="cm-f-dhkrih" type="text" />
+                        <label for="fielddhkrih">Postal Code *</label><br />
+                        <input id="fielddhkrih" name="cm-f-dhkrih" type="text" required/>
                     </div>
                 </div>
                 <div class="row">
