@@ -93,8 +93,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" /> 
-                        <label for="listiljuhu">I agree to receive emails from Milton Mall.</label>
+                        <input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" /> I agree to receive emails from Milton Mall.
+                        <!--<label for="listiljuhu">I agree to receive emails from Milton Mall.</label>-->
                     </div>
                 </div>
                 <div class="row">
