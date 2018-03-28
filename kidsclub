@@ -123,48 +123,48 @@
             </form>
     
     
-            <form action="//sheridancentre.mallmaverick.com/contests/sheridancentre-kids-club/json_entry" method="post" id="contest_form">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label for="fielddhkjhh">Child's First Name</label><br/>
-                        <input id="fielddhkjhh" name="child_first_name" type="text" required placeholder="Child's First Name" />
-                    </div>
-                    <div class="col-md-4">
-                        <label for="fieldEmail">Parent/Guardian's Email Address</label><br />
-                        <input id="fieldEmail" name="parent_email" type="email" required placeholder="Parent/Guardian's Email Address"/>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="fielddhkjkt">Postal Code</label><br />
-                        <input id="fielddhkjkt" name="postal_code" type="text" required placeholder="Postal Code" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12"  style="margin-bottom:0">
-                        <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
-                        <input type="text" id="enterVerify" name="enterVerify" />
-                    </div>
-                    <div class="col-md-12">
-                        <span>
-                            <br>
-                            <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="newsletter" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>
-                        </span>
-                        <br>
-                        <br>
-                        <span>
-                            <label for="agree_terms" style="display:none">Agree Terms</label>
-                            <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>. 
-                        </span>
-                        <br />
-                        <p>
-                            <br>
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                        </p>
-                    </div>
-                </div>
-            </form>
+            <!--<form action="//sheridancentre.mallmaverick.com/contests/sheridancentre-kids-club/json_entry" method="post" id="contest_form">-->
+            <!--    <div class="row">-->
+            <!--        <div class="col-md-4">-->
+            <!--            <label for="fielddhkjhh">Child's First Name</label><br/>-->
+            <!--            <input id="fielddhkjhh" name="child_first_name" type="text" required placeholder="Child's First Name" />-->
+            <!--        </div>-->
+            <!--        <div class="col-md-4">-->
+            <!--            <label for="fieldEmail">Parent/Guardian's Email Address</label><br />-->
+            <!--            <input id="fieldEmail" name="parent_email" type="email" required placeholder="Parent/Guardian's Email Address"/>-->
+            <!--        </div>-->
+            <!--        <div class="col-md-4">-->
+            <!--            <label for="fielddhkjkt">Postal Code</label><br />-->
+            <!--            <input id="fielddhkjkt" name="postal_code" type="text" required placeholder="Postal Code" />-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--    <div class="row">-->
+            <!--        <div class="col-md-12"  style="margin-bottom:0">-->
+            <!--            <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label>-->
+            <!--        </div>-->
+            <!--        <div class="col-md-4">-->
+            <!--            <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />-->
+            <!--            <input type="text" id="enterVerify" name="enterVerify" />-->
+            <!--        </div>-->
+            <!--        <div class="col-md-12">-->
+            <!--            <span>-->
+            <!--                <br>-->
+            <!--                <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="newsletter" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>-->
+            <!--            </span>-->
+            <!--            <br>-->
+            <!--            <br>-->
+            <!--            <span>-->
+            <!--                <label for="agree_terms" style="display:none">Agree Terms</label>-->
+            <!--                <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>. -->
+            <!--            </span>-->
+            <!--            <br />-->
+            <!--            <p>-->
+            <!--                <br>-->
+            <!--                <button class="btn btn-primary" type="submit">Submit</button>-->
+            <!--            </p>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</form>-->
         </div>
     </div>
 </div>
