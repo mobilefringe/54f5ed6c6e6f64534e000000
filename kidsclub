@@ -101,13 +101,18 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label style="font-weight:normal" for="fieldktolj"><input id="fieldktolj" name="newsletter" type="checkbox" value="true" /> Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.</label>
+                        <label style="font-weight:normal" for="fieldktolj">
+                            <input id="fieldktolj" name="newsletter" type="checkbox" value="true" /> 
+                            Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.
+                        </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label for="agree_terms" style="display:none">Agree Terms</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>. 
+                        <label for="agree_terms" style="display:none">
+                            <input type="checkbox" class="info_check" id="agree_terms" required/>
+                            &nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>.     
+                        </label>
                     </div>
                 </div>
                 <div class="row">
