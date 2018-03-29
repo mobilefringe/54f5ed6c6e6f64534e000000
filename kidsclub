@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label for="listiljuhu">
-                            <input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" />
+                            <input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" required />
                             I agree to receive emails form Sheridan Centre and Sheridan Sharks Kids’ Club
                         </label>
                     </div>
@@ -181,42 +181,42 @@
     randomgen();
   
     
-    $('#contest_form').submit(function (e) {
-        e.preventDefault();
-        var form_action = $(this).attr('action');
-        if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            if ($('#agree_terms').prop('checked') == true) {
-                var fields_entered = verify_required_fields();
-                if (!fields_entered){
-                    alert("Please enter the required fields.");
-                }
-                else{
-                    var post_data = {};
-                    var form_data = $('#contest_form').serializeObject();
-                    delete(form_data.verifyNumHidden);
-                    delete(form_data.enterVerify)
-                    post_data.json = JSON.stringify(form_data);
-                    $.post(form_action, post_data, function(data){
-                        if(data.message == "success"){
-                            window.location = "/kids_club_thank_you";
-                        }
-                        else{
-                            alert("Registration failed! Please try again later.")
-                        }
-                    });
-                }
-            }
-            else{
-                alert('Please agree to rules and regulations.');
-                $('#agree_terms').focus();
-            }
-        }
-        else{
-            alert("Please Enter Correct Verification Number");
-            randomgen();
-        }
+    // $('#contest_form').submit(function (e) {
+    //     e.preventDefault();
+    //     var form_action = $(this).attr('action');
+    //     if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+    //         if ($('#agree_terms').prop('checked') == true) {
+    //             var fields_entered = verify_required_fields();
+    //             if (!fields_entered){
+    //                 alert("Please enter the required fields.");
+    //             }
+    //             else{
+    //                 var post_data = {};
+    //                 var form_data = $('#contest_form').serializeObject();
+    //                 delete(form_data.verifyNumHidden);
+    //                 delete(form_data.enterVerify)
+    //                 post_data.json = JSON.stringify(form_data);
+    //                 $.post(form_action, post_data, function(data){
+    //                     if(data.message == "success"){
+    //                         window.location = "/kids_club_thank_you";
+    //                     }
+    //                     else{
+    //                         alert("Registration failed! Please try again later.")
+    //                     }
+    //                 });
+    //             }
+    //         }
+    //         else{
+    //             alert('Please agree to rules and regulations.');
+    //             $('#agree_terms').focus();
+    //         }
+    //     }
+    //     else{
+    //         alert("Please Enter Correct Verification Number");
+    //         randomgen();
+    //     }
         
-    });
+    // });
     
     
     function verify_required_fields (){
