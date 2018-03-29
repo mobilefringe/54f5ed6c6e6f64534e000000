@@ -100,22 +100,6 @@
                         </label>
                     </div>
                 </div>
-                <!--<div class="row">-->
-                <!--    <div class="col-md-12">-->
-                <!--        <label style="font-weight:normal" for="fieldktolj">-->
-                <!--            <input id="fieldktolj" name="newsletter" type="checkbox" value="true" required /> -->
-                <!--            Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.-->
-                <!--        </label>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--    <div class="col-md-12">-->
-                <!--        <label for="agree_terms">-->
-                <!--            <input type="checkbox" class="info_check" id="agree_terms" required/>-->
-                <!--            &nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>.     -->
-                <!--        </label>-->
-                <!--    </div>-->
-                <!--</div>-->
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-primary js-cm-submit-button" type="submit">Submit</button> 
@@ -246,48 +230,7 @@
       }
     }
     
-    function get_month (id){
-        switch(id) {
-            case 0:
-                month = "Jan"
-                break;
-            case 1:
-                month = "Feb"
-                break;
-            case 2:
-                month = "Mar"
-                break;
-            case 3:
-                month = "Apr"
-                break;
-            case 4:
-                month = "May"
-                break;
-            case 5:
-                month = "June"
-                break;
-            case 6:
-                month = "July"
-                break;
-            case 7:
-                month = "Aug"
-                break;
-            case 8:
-                month = "Sep"
-                break;
-            case 9:
-                month = "Oct"
-                break;
-            case 10:
-                month = "Nov"
-                break;
-            case 11:
-                month = "Dec"
-                break;
-                
-        }
-        return month;
-    }
+    
 
     $(document).ready(function() {
         function renderAll (){
