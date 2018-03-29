@@ -83,7 +83,7 @@
                         <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required />
                     </div>
                     <div class="col-md-4">
-                        <label for="fieldEmail">Parent/Guardian's Email Address *</label><br />
+                        <label for="fieldEmail">Parent/Guardian's Email *</label><br />
                         <input id="fieldEmail" class="js-cm-email-input" name="cm-ukiiyu-ukiiyu" type="email" required /> 
                     </div>
                     <div class="col-md-4">
@@ -95,26 +95,26 @@
                     <div class="col-md-12">
                         <label for="listiljuhu">
                             <input id="listiljuhu" name="cm-ol-iljuhu" type="checkbox" />
-                            I would like to subscribe to Sheridan Centre's newsletter.
+                            I agree to receive emails form Sheridan Centre and Sheridan Sharks Kids’ Club
                         </label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <label style="font-weight:normal" for="fieldktolj">
-                            <input id="fieldktolj" name="newsletter" type="checkbox" value="true" required /> 
-                            Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <label for="agree_terms">
-                            <input type="checkbox" class="info_check" id="agree_terms" required/>
-                            &nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>.     
-                        </label>
-                    </div>
-                </div>
+                <!--<div class="row">-->
+                <!--    <div class="col-md-12">-->
+                <!--        <label style="font-weight:normal" for="fieldktolj">-->
+                <!--            <input id="fieldktolj" name="newsletter" type="checkbox" value="true" required /> -->
+                <!--            Yes, I would like to receive ongoing news related to events, promotions and special announcements from the Sheridan Sharks Kids’ Club.-->
+                <!--        </label>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                <!--    <div class="col-md-12">-->
+                <!--        <label for="agree_terms">-->
+                <!--            <input type="checkbox" class="info_check" id="agree_terms" required/>-->
+                <!--            &nbsp;I agree to the <a href = "/pages/sheridancentre-privacy-policy"><u>Privacy Policy</u></a>.     -->
+                <!--        </label>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-primary js-cm-submit-button" type="submit">Submit</button> 
