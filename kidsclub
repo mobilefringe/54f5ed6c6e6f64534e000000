@@ -76,7 +76,8 @@
         <br>
         <div class="contest_form_div">
             <p class="contest_description">Are you looking for something fun and free to do with your kids? Come and check out the Sheridan Sharks Kids’ Club. The club is open to children ages 4 to 12 and activities take place one Saturday a month from 2 to 4 pm. Sign up on-line and you will start receiving a monthly email letting you know when the next event is coming up. When you come to your first event, let the staff know that you signed up on-line and your child will receive a free backpack and membership card entitling them to more gifts when they reach 10 and 20 visits.<br><br>Please note that parents must remain with their children. Gifts are limited to one per child per occasion (initial sign-up, 10 visits and 20 visits) – we regret that we cannot replace lost gifts.</p>
-            <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A448ECC702671075C1F514B75C8366E30E3883B54977488673AE6D67F1A76BEEC9B0A41CA8F30072CAB1E480EE225E72C">
+            
+            <form id="kidsForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A448ECC702671075C1F514B75C8366E30E3883B54977488673AE6D67F1A76BEEC9B0A41CA8F30072CAB1E480EE225E72C">
                 <div class="row">
                     <div class="col-md-4">
                         <label for="fielddhkrtk">Child's First Name *</label><br />
