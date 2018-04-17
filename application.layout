@@ -236,7 +236,7 @@
                     <a class="navbar-brand" href="/home" id="site_logo">
                         <script id="logo_template" type="x-tmpl-mustache/text">
                             {% raw %}
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5ad635406e6f64678e1b0000/image/png/1510612854000/Bentall Logo Updates-02.png">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5ad635406e6f64678e1b0000/image/png/1510612854000/Bentall Logo Updates-02.png" alt="Sheridan Centre Logo">
                             {% endraw %}
                         </script>
                     </a>
