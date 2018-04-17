@@ -225,9 +225,9 @@
                 animation: "slide",
                 controlNav: true,
                 directionNav: true,        
-                prevText: "",
                 nextText: "",
                 pauseOnHover: true,
+                prevText: "",
             });
         }
         
