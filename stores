@@ -25,16 +25,19 @@
                         <a href="/stores/{{slug}}">
                             <p class="directory_content directory_name_col">{{name}}</p>
                         </a>
+                        {{#phone}}
                         <a href="tel:{{phone}}">
                             <p class="directory_content directory_phone_col">{{phone}}</p>
                         </a>
+                        {{/phone}}
                     </script>
                 </div>
             </div>
             <div class="directory_div" id="store_category_list_container">
                 <script id="category_store_list_template" type="x-tmpl-mustache/text">
                     <div id="cat{{id}}" class="cat_list_div" style="display:none">
-                        <p class="directory_header_name directory_name_col">{{name}}</p><p class="directory_header_phone directory_phone_col">Phone</p>
+                        <p class="directory_header_name directory_name_col">{{name}}</p>
+                        <p class="directory_header_phone directory_phone_col">Phone</p>
                         <div class="store_list" id="cat{{id}}_list"></div>
                     </div>
                 </script>    
