@@ -1,0 +1,254 @@
+<style>
+    h3 {
+        margin-top:0 !important;
+        text-transform:uppercase;
+        font-weight:400 !important;
+    }
+    .feature_title{
+        text-align:left;
+    }
+</style>
+<div class="custom_popup">
+    <div class="popup_form_div">
+        <h2 class="pop_up_header p_name">Join Our eClub</h2>
+        <img class="text-left width_100 hide_desk custom_img" src="" />
+        <h3 class="text-right right_desc hide_desk custom_text"></h3>
+        <div class="custom_row">
+            <div class="col-md-6">
+                <section class="">
+                    <form id="form_popup" class="" action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="POST">	
+                        <input type="hidden" value="Popup" name="cm-f-tdtldt" />
+                        <input type="hidden" value="" name="cm-name" id="cm-name" />
+                        <label for="FNAME" class="main_label"><span class="">First Name</span>
+                            <input id="FNAME" name="first_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="LNAME" class="main_label"><span class="">Last Name</span>
+                            <input id="LNAME" name="last_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="EMAIL" class="main_label"><span class="">Email Address</span>
+                            <input id="EMAIL" name="cm-iljuhu-iljuhu" placeholder="" class="custom_field_control" required="required" type="email" value="">	
+                        </label>
+                        <label for="PCODE" class="main_label"><span class="">Postal Code</span>
+					        <input id="PCODE" name="cm-f-tdtldi" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="FMALEMALE" class="main_label radio_main"><span class="">Female/Male</span>
+                            <label for="FMALEMALE-1" class="radio_inside" required="required">
+                                <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-1" checked="checked" value="Female">
+                                <span class="">Female</span>
+                            </label>
+                            <label for="FMALEMALE-2" class="radio_inside">
+                                <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-2" value="Male">
+                                <span class="">Male</span>
+                            </label>
+                        </label>
+                        <label class="main_label">
+                            <input type="checkbox" id="popup_agree" />
+                            I agree to receive emails from Sheridan Centre.
+                        </label>
+                        <button type="submit" class="popup_submit">Submit</button>	
+                    </form>	
+                </section>
+            </div>
+            <div class="col-md-6 hide_phone">
+                <img class="text-left width_100 custom_img" src="" />
+                <h2 class="text-right right_header p_name">Join Our eClub today!</h2>
+                <h3 class="text-right right_desc custom_text"></h3>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <span class="close_popup">CLOSE</span>
+</div>
+
+<section id="slider_wrapper" class="slider_wrapper">
+     <div id="main_flexslider" class="flexslider">
+          <ul class="slides" id="home_banner">
+          
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                 
+               <li class="item">
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img src="{{image_url}}"/>
+                    </a>
+               </li>
+              
+            </script>
+          </ul>
+     </div>
+</section>
+<section class="call_to_action" id="description_section">
+    <script id="description_template" type="x-tmpl-mustache/text">
+        </br>
+       <h3 class="site_welcome_msg">{{welcome_message}}</h3>
+       <h4 class="site_description">{{description}}</h4>
+    </script>
+</section>
+<!--the welcome box colour : #98add0 (outside)   #d2d9e9 (inside)-->
+<div class="main">
+     <div class="container" style="padding-right:0;padding-left:0">
+            
+          <section class="portfolio_teasers_wrapper" style="text-align:center">
+               <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
+               <div class="portfolio_strict row" id="feature_items">
+                    <script id="feature_template" type="x-tmpl-mustache/text">
+                        <div class="feature_div">
+                            <div class="portfolio_description">
+                                <h3 class="feature_title"><a style="color:black;font-size:20px" href="{{url}}">{{name}}</a></h3>
+                            </div>
+                            <div class="portfolio_item"> 
+                                <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                                    <figure >
+                                        <img class="feature_image" src="{{image_url}}" />
+                                        <figcaption>
+                                            <div class="view_button">View</div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </script>
+               </div>
+          </section>
+          <!-- <section class="clients_section wow animated fadeInUp">
+               <h2 class="section_header elegant centered">Our clients<small>all of them are satisfied</small></h2>
+               <div class="clients_list"> <a href="#"><img src="images/clients/wordpress.jpg" alt="client"></a> <a href="#"><img src="images/clients/jquery.jpg" alt="client"></a> <a href="#"><img src="images/clients/microlancer.jpg" alt="client"></a> <a href="#"><img src="images/clients/bbpress.jpg" alt="client"></a> <a href="#"><img src="images/clients/wpml.jpg" alt="client"></a> </div>
+          </section> -->
+     </div>
+</div>
+<script>
+    $(document).ready(function() {
+        function renderPopup(){
+            var popup = getPopups()[0];
+            if(popup != undefined){
+                if($.cookie("popup_viewed") != "true"){
+                    $.cookie("popup_viewed", "true", { expires: 1 });
+                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                    $('.custom_popup').show()
+                }
+                $('.close_popup, .custom_backdrop').click(function(){
+                    $(".modal-backdrop").remove();
+    		        $(".custom_popup").remove();
+                })
+                
+                if(popup.contest.id != null){
+                    $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+                    $('.custom_text').text(popup.description1);
+                    $('.p_name').text(popup.name);
+                } else {
+                    $('.popup_form_div').css('visibility', 'hidden');
+                    $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
+                }
+                
+                // if(isEmpty(popup.contest) == false){
+                //     $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+                //     $('.custom_text').text(popup.description1);
+                //     $('.p_name').text(popup.name);
+                // } else {
+                //     $('.popup_form_div').css('visibility', 'hidden');
+                //     $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
+                // }
+                $('#form_popup').submit(function(){
+                    $('#cm-name').val($('#FNAME').val() + " " + $('#LNAME').val());
+                    if($('#popup_agree').is(':checked') == false){
+                        alert("Please agree to receive emails.");
+                        $('#popup_agree').focus();
+                        return false;
+                    }
+                });
+                $('.close_popup').click(function(){
+                    $('.custom_popup').fadeOut();
+                });
+            }
+        }
+
+        function renderPageData (){
+            renderPopup();
+            var repoList = getRepoList();
+            var featureList = getFeatureList();
+            var propertyDetails = getPropertyDetails();
+            var banners = getBanners()
+            renderBanner('#banner_template','#home_banner',banners);
+            renderFeatureItems('#feature_template', '#feature_items', featureList)
+            renderPropertyDescription('#description_template','#description_section', propertyDetails )
+            $("#feature_items > :nth-child(3n)").css("margin-right","0");
+        }
+        
+        function renderPropertyDescription(description_template, description_section, propertyDetails){
+            var item_list = [];
+            var item_rendered = [];
+            var description_template_html = $(description_template).html();
+            Mustache.parse(description_template_html);   // optional, speeds up future uses
+            item_list.push(propertyDetails);
+            $.each( item_list , function( key, val ) {
+                var description_rendered = Mustache.render(description_template_html,val);
+                item_rendered.push(description_rendered);
+            });
+            $(description_section).show();
+            $(description_section).html(item_rendered.join(''));
+        }
+        
+        function renderBanner(banner_template,home_banner,banners){
+            var item_list = [];
+            var item_rendered = [];
+            var banner_template_html = $(banner_template).html();
+            Mustache.parse(banner_template_html);   // optional, speeds up future uses
+            $.each( banners , function( key, val ) {
+                today = new Date;
+                start = new Date (val.start_date);
+                start.setDate(start.getDate());
+                if(val.url == "" || val.url === null){
+                    val.css = "style=cursor:default;";
+                    val.noLink = "return false";
+                }
+                if (start <= today){
+                    if (val.end_date){
+                        end = new Date (val.end_date);
+                        end.setDate(end.getDate() + 1);
+                        if (end >= today){
+                            item_list.push(val);  
+                        }
+                    } else {
+                        item_list.push(val);
+                    }
+                }
+            });
+
+            $.each( item_list , function( key, val ) {
+                var repo_rendered = Mustache.render(banner_template_html,val);
+                item_rendered.push(repo_rendered);
+            });
+            
+            $(home_banner).show();
+            $(home_banner).html(item_rendered.join(''));
+            $('.item').first().addClass('active');
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: true,
+                directionNav: true,        
+                prevText: "",
+                nextText: "",
+                pauseOnHover: true,
+            });
+        }
+        
+        function renderFeatureItems(feature_template,feature_items,featureList){
+            var item_list = [];
+            var item_rendered = [];
+            var feature_template_html = $(feature_template).html();
+            Mustache.parse(feature_template_html);   // optional, speeds up future uses
+            count = 0
+            $.each( featureList , function( key, val ) {
+                if (count < 3){
+                    val.alt_url = val.image_url;
+                    var featureitem_rendered = Mustache.render(feature_template_html,val);
+                    item_rendered.push(featureitem_rendered);
+                    count = count + 1    
+                }
+            });
+            $(feature_items).show();
+            $(feature_items).html(item_rendered.join(''));
+        }
+        
+        loadMallData(renderPageData);
+    });
+</script>
