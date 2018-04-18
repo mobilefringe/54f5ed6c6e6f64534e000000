@@ -423,9 +423,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border-top:2px solid darkgray;
     border-bottom:2px solid darkgray;
 }
-.page_banner  h3 {
-    font-size:28px;
-    text-transform:uppercase;    
+.page_banner h3 {
+    font-size: 28px;
+    text-transform: uppercase;    
 }
 #loading_screen {
     text-align:center;
