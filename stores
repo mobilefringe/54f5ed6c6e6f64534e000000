@@ -11,7 +11,7 @@
     <div class="page_banner">Store Directory</div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/99711dcea54fd610894294a1b61a2c73/SC Stores - little girl shopping.jpg"/>
+            <img class="inside_banner_image" alt="" src="//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/99711dcea54fd610894294a1b61a2c73/SC Stores - little girl shopping.jpg"/>
             <div class="mobile_cat_list" style="display:none">
                 <p class="right_column_header">categories</p>
                 <div id="mobile_categories_container">
