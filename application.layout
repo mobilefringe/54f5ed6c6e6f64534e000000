@@ -447,7 +447,7 @@
             </div>
         </section>
         <section class="site-map-section">
-            <div class="bottom-site-map">
+            <nav class="bottom-site-map">
                 <ul style="margin-bottom:0;padding:0">
                     <li><a href="/stores">Store Directory</a></li>
                     <li><a href="/events">Events</a></li>
@@ -455,7 +455,7 @@
                     <li><a href="/leasing">Leasing</a></li>
                     <li><a href="/contact_us">contact Us</a></li>
                 </ul>
-            </div>
+            </nav>
         </section>
         <section class="copyright">
            <div class="container">
