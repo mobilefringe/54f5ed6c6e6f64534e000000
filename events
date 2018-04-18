@@ -44,8 +44,6 @@
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                 </script>
             </div>
-            
-            
         </div>
     </div>
 </div>
