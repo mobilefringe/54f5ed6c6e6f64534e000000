@@ -23,10 +23,16 @@
                             </a> 
                         </div>
                         <div class="promo_desc_box">
-                            <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
-                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{dates}}</p>
+                            <p class="promo_header right_column_header">{{name}}</p>
+                            <p class="directory_content promo_date">
+                                {{#store_detail_btn}}
+                                <a href="/stores/{{store_detail_btn}}">{{store_name}}</a>
+                                {{/store_detail_btn}}
+                                <br>
+                                {{dates}}
+                            </p>
                             <p id="desc">{{description}}</p>
-                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> </div>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> 
                         </div>
                     </div>
                 </script>
@@ -44,8 +50,6 @@
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                 </script>
             </div>
-            
-            
         </div>
     </div>
 </div>
