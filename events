@@ -26,7 +26,7 @@
                             <a href="../events/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
                             <p class="directory_content promo_date">{{dates}}</p>
                             <p>{{description}}</p>
-                            <a href="../events/{{slug}}" class="btn btn-primary pull-left">Event Details</a> </div>
+                            <a href="../events/{{slug}}" class="btn btn-primary pull-left" aria-label="Event Details: {{name}}">Event Details</a> </div>
                         </div>
                     </div>
                 </script>
