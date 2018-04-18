@@ -32,7 +32,7 @@
                                 {{dates}}
                             </p>
                             <p id="desc">{{description}}</p>
-                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> 
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left" aria-label="Promotion Details: {{name}}">Promo Details</a> 
                         </div>
                     </div>
                 </script>
