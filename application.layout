@@ -416,6 +416,7 @@
                             <ul class="list-group">
                                 <li>
                                     <a class="close-search list-group-item" style="color:black;font-weight:bold">
+                                        <p style="display:none">Search Results</p>
                                         <small>
                                             <span class="search-results-count">
                                                 {{count}} results found.</span>&nbsp;<span data-i18n="general.results">
