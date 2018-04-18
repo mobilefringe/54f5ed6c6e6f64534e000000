@@ -322,7 +322,7 @@
                 </a>
             </div>
             <a href="//bentallkennedy.com/" target="_blank">
-                <div class="bk_logo_svg"></div>
+                <div aria-label="Bentall Kennedy Logo" class="bk_logo_svg"></div>
             </a>
         </div>
     </header>
