@@ -85,21 +85,23 @@
         <section class="portfolio_teasers_wrapper" style="text-align:center">
             <div class="portfolio_strict row" id="feature_items">
                 <script id="feature_template" type="x-tmpl-mustache/text">
-                    <div class="feature_div">
-                        <div class="portfolio_description">
-                            <h3 class="feature_title"><a style="color:black;font-size:20px" href="{{url}}">{{name}}</a></h3>
+                    <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                        <div class="feature_div">
+                            <div class="portfolio_description">
+                                <h3 class="feature_title">{{name}}</h3>
+                            </div>
+                            <div class="portfolio_item"> 
+                                
+                                    <figure>
+                                        <img class="feature_image" src="{{image_url}}" alt=""/>
+                                        <figcaption>
+                                            <div class="view_button">View</div>
+                                        </figcaption>
+                                    </figure>
+                                
+                            </div>
                         </div>
-                        <div class="portfolio_item"> 
-                            <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
-                                <figure>
-                                    <img class="feature_image" src="{{image_url}}" alt=""/>
-                                    <figcaption>
-                                        <div class="view_button">View</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
+                    </a>
                 </script>
            </div>
         </section>
