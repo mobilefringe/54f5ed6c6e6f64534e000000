@@ -223,6 +223,10 @@
         .breadcrumb > .active {
             color: #262626;
         }
+        footer a:hover, footer a:active {
+            color: #FFF;
+            text-decoration: underline;
+        }
         @media (max-width: 767px) {
             .main_window{
                 width:100%;
