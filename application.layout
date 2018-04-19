@@ -220,6 +220,9 @@
         .copyright, .copyright a {
             color: #FFF;
         }
+        .breadcrumb > .active {
+            color: #262626;
+        }
         @media (max-width: 767px) {
             .main_window{
                 width:100%;
