@@ -5,7 +5,7 @@
     <nav>
         <ul class="breadcrumb">
             <li><a href="/home">Home</a> </li>
-            <li><a href="/home">Contact Us</a> </li>
+            <li><a href="/contact_us">Contact Us</a> </li>
             <li class="active">Find Us</li>
         </ul>
     </nav>
