@@ -206,7 +206,7 @@
             background:#253a80 !important;
         }
         .right_column_header {
-            color: #938c84 ;
+            color: #575757 ;
         }
         .navbar .nav li a:hover {
             color:#d2d1e1 !important;
