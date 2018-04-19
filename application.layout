@@ -217,7 +217,7 @@
         #footer_teasers_wrapper .footer_teaser a {
             color: #ccc;
         }
-        .copyright, .copyright a, {
+        .copyright, .copyright a {
             color: #FFF;
         }
         .copyright a:hover, .copyright a:focus {
