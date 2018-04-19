@@ -18,7 +18,7 @@
 <div id="loading_screen">
     <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
-<div  id="main_content" style="display:none">
+<div id="main_content" style="display:none">
     <nav>
         <ul class="breadcrumb">
             <li><a href="/home">Home</a> </li>
@@ -62,6 +62,8 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             var repoList = getRepoList();  
             renderPhotos("#photo_container", "#photo_template", repoList);
+            
+            $("#lbCloseLink").html("<p style='display: none'>Close Light Box</p>")
             $("#loading_screen").hide();
             $("#main_content").show();
             $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
