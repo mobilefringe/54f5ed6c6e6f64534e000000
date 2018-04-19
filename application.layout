@@ -214,6 +214,9 @@
         .site-map-section a:hover {
             color:#d2d1e1 !important;
         }
+        .copyright, .copyright a {
+            color: #FFF;
+        }
         @media (max-width: 767px) {
             .main_window{
                 width:100%;
