@@ -63,9 +63,12 @@
             var repoList = getRepoList();  
             renderPhotos("#photo_container", "#photo_template", repoList);
             
-            $("#lbCloseLink").html("<p style='display: none'>Close Light Box</p>")
+            
             $("#loading_screen").hide();
             $("#main_content").show();
+            
+            $("#lbCloseLink").html("<p style='display: none'>Close Light Box</p>");
+            
             $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
         }
