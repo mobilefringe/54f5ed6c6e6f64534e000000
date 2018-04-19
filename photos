@@ -62,14 +62,10 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             var repoList = getRepoList();  
             renderPhotos("#photo_container", "#photo_template", repoList);
-            
-            
             $("#loading_screen").hide();
             $("#main_content").show();
             
-            $("#lbCloseLink").html("<p style='display: none'>Close Light Box</p>");
-            
-            $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $.getScript("http://bkindoortemplate.codecloudapp.com/slimbox_mod.js");
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
         }
         
