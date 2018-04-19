@@ -1,4 +1,4 @@
-<style scoped>
+<style>
     .portfolio_item {
         height:160px;
         width:260px;
