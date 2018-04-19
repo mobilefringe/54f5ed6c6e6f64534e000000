@@ -214,6 +214,9 @@
         .site-map-section a:hover {
             color:#d2d1e1 !important;
         }
+        #footer_teasers_wrapper .footer_teaser a {
+            color: #ccc;
+        }
         .copyright, .copyright a {
             color: #FFF;
         }
