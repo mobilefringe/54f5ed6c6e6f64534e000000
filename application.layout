@@ -117,15 +117,15 @@
         }
         /*hyperlinks*/
         a {
-            color:#938c84;
-            text-decoration:inherit;
+            color: #585858;
+            text-decoration: inherit;
         }
         /*hyperlink hover color*/
-        a:hover{
-            color: #938c84 !important;
+        a:hover {
+            color: #585858 !important;
         }
         body{
-            background:white;
+            background: white;
         }
         .navbar a.navbar-brand img {
             width:150px !important;
