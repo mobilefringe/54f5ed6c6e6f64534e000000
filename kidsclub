@@ -90,8 +90,8 @@
                         <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required />
                     </div>
                     <div class="col-md-4">
-                        <label for="fieldEmail">Parent/Guardian's Email *</label><br />
-                        <input id="fieldEmail" class="js-cm-email-input" name="cm-ukiiyu-ukiiyu" type="email" required /> 
+                        <label for="kidsClubEmail">Parent/Guardian's Email *</label><br />
+                        <input id="kidsClubEmail" class="js-cm-email-input" name="cm-ukiiyu-ukiiyu" type="email" required /> 
                     </div>
                     <div class="col-md-4">
                         <label for="fielddhkrih">Postal Code *</label><br />
