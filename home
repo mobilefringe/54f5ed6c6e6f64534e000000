@@ -85,15 +85,14 @@
         <section class="portfolio_teasers_wrapper" style="text-align:center">
             <div class="portfolio_strict row" id="feature_items">
                 <script id="feature_template" type="x-tmpl-mustache/text">
-                    <a style="color:black;font-size:20px" href="{{url}}">
                     <div class="feature_div">
                         <div class="portfolio_description">
                             <h3 class="feature_title">{{name}}</h3>
                         </div>
                         <div class="portfolio_item"> 
-                            <a data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                            <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                                 <figure>
-                                    <img class="feature_image" src="{{image_url}}" alt=""/>
+                                    <img class="feature_image" src="{{image_url}}" alt="{{name}}"/>
                                     <figcaption>
                                         <div class="view_button">View</div>
                                     </figcaption>
@@ -101,7 +100,6 @@
                             </a>
                         </div>
                     </div>
-                    </a>
                 </script>
            </div>
         </section>
