@@ -221,7 +221,7 @@
             color: #FFF;
         }
         .copyright a:hover, .copyright a:focus {
-            color: #FFF;
+            color: #FFF !important;
             text-decoration: underline;
         }
         .breadcrumb > .active {
