@@ -309,7 +309,7 @@
                         <li id="event_link"><a href="/events">Events</a></li>
                         <li id="promotion_link"><a href="/promotions">Promotions</a></li>
                         <li id="leasing_link" class="dropdown">
-                            <a dhref="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                                 Leasing <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
