@@ -8,7 +8,9 @@
             <li class="active">Store Directory</li>
         </ul>
     </nav>
-    <div class="page_banner">Store Directory</div>
+    <div class="page_banner">
+        <h2>Store Directory</h2>
+    </div>
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="" src="//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/99711dcea54fd610894294a1b61a2c73/SC Stores - little girl shopping.jpg"/>
