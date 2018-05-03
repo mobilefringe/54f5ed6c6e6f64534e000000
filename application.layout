@@ -298,7 +298,9 @@
                 <nav class="collapse navbar-collapse">              
                     <ul class="nav pull-right navbar-nav">
                         <li id="directory_link" class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle">Store Directory <span class="caret"></span></a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                                Store Directory <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Store Directory</a></li>
                                 <li id="menu_map"><a href="/map">Centre Map</a></li>
@@ -307,14 +309,18 @@
                         <li id="event_link"><a href="/events">Events</a></li>
                         <li id="promotion_link"><a href="/promotions">Promotions</a></li>
                         <li id="leasing_link" class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle">Leasing <span class="caret"></span></a>
+                            <a dhref="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                                Leasing <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing">Leasing</a></li>
                                 <li><a href="/photos">Photos</a></li>
                             </ul> 
                         </li>
                         <li id="contact_link" class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle">contact us <span class="caret"></span></a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                                Contact Us <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/contact_us">Contact Us</a></li>
                                 <li><a href="/find_us">Find Us</a></li>
@@ -348,7 +354,6 @@
         <h1 style="display: none">Sheridan Centre</h1>
         {{yield}}
     </div>
-
     <footer>
         <section id="footer_teasers_wrapper">
             <div class="container">
@@ -502,6 +507,22 @@
     var current_year = moment().year();
     $("#current_year").text(current_year);
     
+    var menuItems = document.querySelectorAll('li.dropdown');
+    Array.prototype.forEach.call(menuItems, function(el, i){
+	    el.querySelector('a').addEventListener("click",  function(event){
+    		if (this.parentNode.className == "dropdown") {
+    			this.parentNode.className = "dropdown open";
+    			this.setAttribute('aria-expanded', "true");
+    		} else {
+    			this.parentNode.className = "dropdown";
+    			this.setAttribute('aria-expanded', "false");
+    		}
+    		event.preventDefault();
+    		return false;
+    	});
+    });
+
+
     function show_results(id){
         if ( $("#"+id+"_results").is(":visible")){
             $("#"+id+"_results").slideUp();
