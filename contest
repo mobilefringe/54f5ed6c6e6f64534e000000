@@ -55,7 +55,6 @@
                 <label for="fieldName">Name</label><br />
                 <input id="fieldName" name="cm-name" type="text"/>
             </p>
-            
             <p class="large_field">
                 <label for="firstName">First Name*</label><br/>
                 <input id="firstName" type="text" required placeholder="First Name" />
@@ -64,7 +63,6 @@
                 <label for="lastName">Last Name*</label><br/>
                 <input id="lastName" type="text" required placeholder="Last Name"/>
             </p>
-          
             <p class="large_field">
                 <label for="fieldEmail">Email*</label><br />
                 <input id="fieldEmail" name="cm-iljuul-iljuul" type="email" required placeholder="Email"/>
@@ -81,7 +79,6 @@
                 <label for="fieldjykykt">City</label><br />
                 <input id="fieldjykykt" name="cm-f-jykykt" type="text" placeholder="City"/>
             </p>
-            
             <p class="small_field">
                 <label for="fieldjykykr">Postal Code*</label><br />
                 <input id="fieldjykykr" name="cm-f-jykykr" type="text" required placeholder="Postal Code"/>
@@ -96,25 +93,21 @@
             </p>
             <br>
             <br>
-            
-       
             <br>
                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                 <input type="text" id="enterVerify" name="enterVerify" />
             <br>
-
             <span>
                 <br>
                 <label for="newsletter_signup" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;Yes, I would like to receive ongoing news related to events, promotions and special   
-  announcements from Sheridan Centre.
+                <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;Yes, I would like to receive ongoing news related to events, promotions and special announcements from Sheridan Centre.
             </span>
             <br>
             <br>
             <span>
                 <label for="agree_terms" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-rules-regulations"><u>Rules and Regulations</u></a>. 
+                <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-rules-regulations"><u>Rules and Regulations</u></a>. 
             </span>
             <br>
             <br>
