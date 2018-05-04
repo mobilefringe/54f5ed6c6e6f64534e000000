@@ -71,7 +71,6 @@
                         <!--//     <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a>-->
                         <!--// </p>-->
                         <!--// <br>-->
-                </div>
             </div>
             <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
