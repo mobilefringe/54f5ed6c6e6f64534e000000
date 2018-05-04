@@ -9,7 +9,7 @@
         </ul>
     </nav>
     <div class="page_banner">
-        <h3>Promotions</h3>
+        <h2>Promotions</h2>
     </div>
     <div class="inside_page_content">
         <div class="left_column">
@@ -62,9 +62,6 @@
             all_promos = all_promos.reverse();
             promo_array = []
             $.each( all_promos , function( key, val ){
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date)
-                
                 today = moment();
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate) {
