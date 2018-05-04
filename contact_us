@@ -21,55 +21,55 @@
                         <p class="directory_content">{{name}}</p>
                         <p class="directory_content">{{address1}}</p>
                         <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-                        <br>
-                        <div id="mm_page_content"></div>
-                        // <p class="directory_content">
-                        //     <strong>Dan Free</strong> 
-                        //     <br>General Manager
-                        //     <br>905-822-0344, ext.223
-                        //     <br>
-                        //     <a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a>
-                        // </p>
-                        // <br>
-                        // <p class="directory_content">
-                        //     <strong>Brian Anderson</strong> 
-                        //     <br>Director, Leasing* 
-                        //     <br>Bentall Kennedy (Canada) 
-                        //     <br> Limited Partnership, Brokerage 
-                        //     <br>1.866.681.2715
-                        //     <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>
-                        //     <br>*Sales Representative
-                        // </p>
-                        // <br>
-                        // <p class="directory_content">
-                        //     <strong>Jenifer Sim</strong> 
-                        //     <br>Marketing Director
-                        //     <br>905-822-0344, ext. 224
-                        //     <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a>
-                        // </p>
-                        // <br>
-                        // <p class="directory_content">
-                        //     <strong>Mike Tripp</strong> 
-                        //     <br>Operations Manager
-                        //     <br>905-822-0344, ext.225
-                        //     <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a>
-                        // </p>
-                        // <br>
-                        // <p class="directory_content">
-                        //     <strong>Peggy Dawes</strong> 
-                        //     <br>Retail Accounts Coordinator
-                        //     <br>905-822-0344, ext. 226 
-                        //     <br><a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a>
-                        // </p>
-                        // <br>
-                        // <p class="directory_content">
-                        //     <strong>Tahera Hudda</strong> 
-                        //     <br>Administrative Assistant
-                        //     <br>905-822-0344,221
-                        //     <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a>
-                        // </p>
-                        // <br>
-                    </script>
+                     </script>
+                    <br>
+                    <div id="mm_page_content"></div>
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Dan Free</strong> -->
+                        <!--//     <br>General Manager-->
+                        <!--//     <br>905-822-0344, ext.223-->
+                        <!--//     <br>-->
+                        <!--//     <a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a>-->
+                        <!--// </p>-->
+                        <!--// <br>-->
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Brian Anderson</strong> -->
+                        <!--//     <br>Director, Leasing* -->
+                        <!--//     <br>Bentall Kennedy (Canada) -->
+                        <!--//     <br> Limited Partnership, Brokerage -->
+                        <!--//     <br>1.866.681.2715-->
+                        <!--//     <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>-->
+                        <!--//     <br>*Sales Representative-->
+                        <!--// </p>-->
+                        <!--// <br>-->
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Jenifer Sim</strong> -->
+                        <!--//     <br>Marketing Director-->
+                        <!--//     <br>905-822-0344, ext. 224-->
+                        <!--//     <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a>-->
+                        <!--// </p>-->
+                        <!--// <br>-->
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Mike Tripp</strong> -->
+                        <!--//     <br>Operations Manager-->
+                        <!--//     <br>905-822-0344, ext.225-->
+                        <!--//     <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a>-->
+                        <!--// </p>-->
+                        <!--// <br>-->
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Peggy Dawes</strong> -->
+                        <!--//     <br>Retail Accounts Coordinator-->
+                        <!--//     <br>905-822-0344, ext. 226 -->
+                        <!--//     <br><a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a>-->
+                        <!--// </p>-->
+                        <!--// <br>-->
+                        <!--// <p class="directory_content">-->
+                        <!--//     <strong>Tahera Hudda</strong> -->
+                        <!--//     <br>Administrative Assistant-->
+                        <!--//     <br>905-822-0344,221-->
+                        <!--//     <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a>-->
+                        <!--// </p>-->
+                        <!--// <br>-->
                 </div>
             </div>
             <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
@@ -132,40 +132,42 @@
                     <p class="directory_content">{{address1}}</p>
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                     <p class="directory_content">905-822-0344</p>
-                    <br>
-                    <p class="directory_content"><strong>Dan Free </strong> 
-                    <br>General Manager
-                    <br>905-822-0344, ext.223
-                    <br><a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a></p>
-                    <br>
-                    <p class="directory_content"><strong>Brian Anderson </strong> 
-                    <br>Director, Leasing* 
-                    <br>Bentall Kennedy (Canada) <br> Limited Partnership, Brokerage 
-                    <br>1.866.681.2715
-                    <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>
-                    <br>*Sales Representative</p>
-                    <br>
-                    <p class="directory_content"><strong>Jenifer Sim</strong> 
-                    <br>Marketing Director
-                    <br>905-822-0344, ext. 224
-                    <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a></p>
-                    <br>
-                    <p class="directory_content"><strong>Mike Tripp</strong> 
-                    <br>Operations Manager
-                    <br>905-822-0344, ext.225
-                    <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a></p>
-                    <br>
-                    <p class="directory_content"><strong>Peggy Dawes</strong> 
-                    <br>Retail Accounts Coordinator
-                    <br>905-822-0344, ext. 226 
-                    <br> <a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a></p>
-                    <br>
-                    <p class="directory_content"><strong>Tahera Hudda</strong> 
-                    <br>Administrative Assistant
-                    <br>905-822-0344,221
-                    <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a></p>
-                    <br>
                 </script>
+                <br>
+                <div id="mm_page_content"></div>
+                    <!--// <p class="directory_content"><strong>Dan Free </strong> -->
+                    <!--// <br>General Manager-->
+                    <!--// <br>905-822-0344, ext.223-->
+                    <!--// <br><a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a></p>-->
+                    <!--// <br>-->
+                    <!--// <p class="directory_content"><strong>Brian Anderson </strong> -->
+                    <!--// <br>Director, Leasing* -->
+                    <!--// <br>Bentall Kennedy (Canada) <br> Limited Partnership, Brokerage -->
+                    <!--// <br>1.866.681.2715-->
+                    <!--// <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>-->
+                    <!--// <br>*Sales Representative</p>-->
+                    <!--// <br>-->
+                    <!--// <p class="directory_content"><strong>Jenifer Sim</strong> -->
+                    <!--// <br>Marketing Director-->
+                    <!--// <br>905-822-0344, ext. 224-->
+                    <!--// <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a></p>-->
+                    <!--// <br>-->
+                    <!--// <p class="directory_content"><strong>Mike Tripp</strong> -->
+                    <!--// <br>Operations Manager-->
+                    <!--// <br>905-822-0344, ext.225-->
+                    <!--// <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a></p>-->
+                    <!--// <br>-->
+                    <!--// <p class="directory_content"><strong>Peggy Dawes</strong> -->
+                    <!--// <br>Retail Accounts Coordinator-->
+                    <!--// <br>905-822-0344, ext. 226 -->
+                    <!--// <br> <a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a></p>-->
+                    <!--// <br>-->
+                    <!--// <p class="directory_content"><strong>Tahera Hudda</strong> -->
+                    <!--// <br>Administrative Assistant-->
+                    <!--// <br>905-822-0344,221-->
+                    <!--// <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a></p>-->
+                    <!--// <br>-->
+                
             </div>
         </div>
     </div>
