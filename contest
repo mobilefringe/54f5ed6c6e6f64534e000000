@@ -128,7 +128,6 @@
         $('#verifyNumHidden').val(rannumber);
     }
     randomgen();
-  
     
     $('#contest_form').submit(function (e) {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
@@ -213,7 +212,6 @@
             $("#loading_screen").hide();
             $("#main_content").show();
         }
-        
     
         function renderPageData(container, template, collection, type){
             var item_list = [];
@@ -228,17 +226,11 @@
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
 
         loadMallData(renderAll);  
-
-    
-  
     });
-    
 </script>
