@@ -1,13 +1,12 @@
 <style>
     .promo_inside_content{
-        border-bottom:0;
-        padding-bottom:0;
+        border-bottom: 0;
+        padding-bottom: 0;
     }
     .promo_date{
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 </style>
-
 
 <div id="loading_screen">
     <img alt="loading" src="//kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
@@ -21,7 +20,7 @@
         </ul>
     </nav>
     <div class="page_banner">
-        <h3>Jobs</h3>
+        <h2>Jobs</h2>
     </div>
     <div class="inside_page_content">
         <div class="left_column">
