@@ -23,7 +23,7 @@
                         <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                      </script>
                     <br>
-                    <div id="mm_page_content"></div>
+                    <div id="mm_page_content_mobile"></div>
                         <!--// <p class="directory_content">-->
                         <!--//     <strong>Dan Free</strong> -->
                         <!--//     <br>General Manager-->
@@ -213,7 +213,8 @@
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
-            renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details')
+            renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details');
+            renderpageHTML();
             $("#loading_screen").hide();
             $("#main_content").show();
         }
