@@ -139,7 +139,7 @@
             border:40px solid #b9b7d0;
         }
         .btn-primary{
-            background: #938c84 !important;
+            background: #767676 !important;
             border-color:#797268 !important;
             text-align:center;
             color:white !important;
