@@ -22,52 +22,53 @@
                         <p class="directory_content">{{address1}}</p>
                         <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                         <br>
-                        <p class="directory_content">
-                            <strong>Dan Free</strong> 
-                            <br>General Manager
-                            <br>905-822-0344, ext.223
-                            <br>
-                            <a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a>
-                        </p>
-                        <br>
-                        <p class="directory_content">
-                            <strong>Brian Anderson</strong> 
-                            <br>Director, Leasing* 
-                            <br>Bentall Kennedy (Canada) 
-                            <br> Limited Partnership, Brokerage 
-                            <br>1.866.681.2715
-                            <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>
-                            <br>*Sales Representative
-                        </p>
-                        <br>
-                        <p class="directory_content">
-                            <strong>Jenifer Sim</strong> 
-                            <br>Marketing Director
-                            <br>905-822-0344, ext. 224
-                            <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a>
-                        </p>
-                        <br>
-                        <p class="directory_content">
-                            <strong>Mike Tripp</strong> 
-                            <br>Operations Manager
-                            <br>905-822-0344, ext.225
-                            <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a>
-                        </p>
-                        <br>
-                        <p class="directory_content">
-                            <strong>Peggy Dawes</strong> 
-                            <br>Retail Accounts Coordinator
-                            <br>905-822-0344, ext. 226 
-                            <br><a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a>
-                        </p>
-                        <br>
-                        <p class="directory_content">
-                            <strong>Tahera Hudda</strong> 
-                            <br>Administrative Assistant
-                            <br>905-822-0344,221
-                            <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a>
-                        </p>
-                        <br>
+                        <div id="mm_page_content"></div>
+                        // <p class="directory_content">
+                        //     <strong>Dan Free</strong> 
+                        //     <br>General Manager
+                        //     <br>905-822-0344, ext.223
+                        //     <br>
+                        //     <a href="mailto:dfree@bentallkennedy.com">dfree@bentallkennedy.com</a>
+                        // </p>
+                        // <br>
+                        // <p class="directory_content">
+                        //     <strong>Brian Anderson</strong> 
+                        //     <br>Director, Leasing* 
+                        //     <br>Bentall Kennedy (Canada) 
+                        //     <br> Limited Partnership, Brokerage 
+                        //     <br>1.866.681.2715
+                        //     <br><a href="mailto:banderson@bentallkennedy.com">banderson@bentallkennedy.com</a>
+                        //     <br>*Sales Representative
+                        // </p>
+                        // <br>
+                        // <p class="directory_content">
+                        //     <strong>Jenifer Sim</strong> 
+                        //     <br>Marketing Director
+                        //     <br>905-822-0344, ext. 224
+                        //     <br><a href="mailto:jsim@bentallkennedy.com" target="_blank">jsim@bentallkennedy.com</a>
+                        // </p>
+                        // <br>
+                        // <p class="directory_content">
+                        //     <strong>Mike Tripp</strong> 
+                        //     <br>Operations Manager
+                        //     <br>905-822-0344, ext.225
+                        //     <br><a href="mailto:mtripp@bentallkennedy.com">mtripp@bentallkennedy.com</a>
+                        // </p>
+                        // <br>
+                        // <p class="directory_content">
+                        //     <strong>Peggy Dawes</strong> 
+                        //     <br>Retail Accounts Coordinator
+                        //     <br>905-822-0344, ext. 226 
+                        //     <br><a href="mailto:pdawes@bentallkennedy.com">pdawes@bentallkennedy.com</a>
+                        // </p>
+                        // <br>
+                        // <p class="directory_content">
+                        //     <strong>Tahera Hudda</strong> 
+                        //     <br>Administrative Assistant
+                        //     <br>905-822-0344,221
+                        //     <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a>
+                        // </p>
+                        // <br>
                     </script>
                 </div>
             </div>
@@ -214,7 +215,19 @@
             $("#loading_screen").hide();
             $("#main_content").show();
         }
-
+        
+        function renderpageHTML(){
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/sheridancentre-contact-us.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+        }
+        
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
