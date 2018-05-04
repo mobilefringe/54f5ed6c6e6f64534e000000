@@ -77,7 +77,7 @@
         <li class="active">Centre Map</li>
     </ul>
     <div class="page_banner">
-        <h3>Centre Map</h3>
+        <h2>Centre Map</h2>
     </div>
     <div class="text-right">
         <a href="//codecloud.cdn.speedyrails.net/sites/54f605386e6f6412de000000/application/pdf/1460046824000/Sheridan_map.pdf" target="_blank" aria-label="Link opens PDF document">Download Map</a>
@@ -109,8 +109,6 @@
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
-            // renderPageData('#landmark_container','#landmark_template',stores)
-            
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
@@ -122,9 +120,7 @@
         
         function renderStoreList(stores){
             for(var i = 0; i < stores.length;i++){
-                // stores[i].x_coordinate = stores[i].x_coordinate - 10;
-                // stores[i].y_coordinate = stores[i].y_coordinate - 35;
-               $("#storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+'">'+stores[i].name+'</option>') 
+               $("#storelist_container").append('<option value="' + stores[i].x_coordinate + ',' + stores[i].y_coordinate + ',' + stores[i].id + '">' + stores[i].name + '</option>') 
             }
         }
         
@@ -177,7 +173,6 @@
                                 f.select(svg_id).mouseout(function() {
                                     this.removeClass("map-mouse-over");
                                     $("#pop-over").hide(0);
-                                    
                                 });
                                     
                                 //add the mouse up function for when the user clicks a store
@@ -249,7 +244,6 @@
                 	     	responsive_maintain_ratio: false
                 		});
                     });
-                    
                     renderStoreList(stores)
                 }
             } else {
@@ -288,10 +282,10 @@
             
             $('#png_map').smoothZoom('addLandmark', 
     			[
-    			'<div class="item mark" data-show-at-zoom="0" data-position="'+x_coord+','+y_coord+'">\
+    			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coord + ',' + y_coord + '">\
     				<div>\
     					<div class="text">\
-    					<strong>'+name+'</strong>\
+    					<strong>' + name + '</strong>\
     				</div>\
     				<img src="//kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="59px" alt="marker" />\
     				</div>\
