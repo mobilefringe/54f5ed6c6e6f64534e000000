@@ -22,8 +22,9 @@
                         <p class="directory_content">{{address1}}</p>
                         <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                      </script>
-                    <br>
-                    <div id="mm_page_content_mobile"></div>
+                </div>
+                <br>
+                <div id="mm_page_content"></div>
                         <!--// <p class="directory_content">-->
                         <!--//     <strong>Dan Free</strong> -->
                         <!--//     <br>General Manager-->
@@ -133,8 +134,9 @@
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                     <p class="directory_content">905-822-0344</p>
                 </script>
-                <br>
-                <div id="mm_page_content"></div>
+            </div>
+            <br>
+            <div id="mm_page_content"></div>
                     <!--// <p class="directory_content"><strong>Dan Free </strong> -->
                     <!--// <br>General Manager-->
                     <!--// <br>905-822-0344, ext.223-->
@@ -167,8 +169,6 @@
                     <!--// <br>905-822-0344,221-->
                     <!--// <br><a href="mailto:thudda@bentallkennedy.com">thudda@bentallkennedy.com</a></p>-->
                     <!--// <br>-->
-                
-            </div>
         </div>
     </div>
 </div>
