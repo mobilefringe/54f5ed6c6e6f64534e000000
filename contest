@@ -144,11 +144,11 @@
                         var s = check_email();
                         if (s == true){
                             var email = $("#fieldEmail").val();
-                            $('input[name="cm-iljuhu-iljuhu"]').attr('value',email);
+                            $('input[name="cm-iljuhu-iljuhu"]').attr('value', email);
                             console.log($("#subForm").serialize())
-                             $.getJSON(
+                            $.getJSON(
                                 "//mobilefringe.createsend.com/t/d/s/iljuhu/?callback=?",
-                               $("#subForm").serialize(),
+                                $("#subForm").serialize(),
                                 function (data) {
                                     if (data.Status === 400) {
                                         e.preventDefault();
@@ -156,12 +156,12 @@
                                     } else { // 200
                                         // $('#contest_form').unbind('submit').submit();
                                     }
-                            });  
+                                }
+                            );  
                         } else {
                             e.preventDefault();
                             alert("Invaid E-mail address.")
                         }
-                        
                     } else {
                         $('#contest_form').unbind('submit').submit();    
                     }    
@@ -169,22 +169,16 @@
                     e.preventDefault();
                     alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
                 }
-                
-                
             } else {
                 e.preventDefault();
                 alert("Please agree to the terms and conditions before submitting!")
             }
+        } else {
+            alert("Please Enter Correct Verification Number");
+            randomgen();
+            e.preventDefault();
         }
-            else
-            {
-                alert("Please Enter Correct Verification Number");
-                randomgen();
-                e.preventDefault();
-            }
-        
     });
-    
     
     function verify_required_fields (){
         if ($("#firstName").val() != "" && $("#lastName").val() != "" && $("#fieldEmail").val() != "" && $("#fieldjrihe").val() != "" && $("#fieldjrihs").val() != "" && $("#fieldjrihg").val() != "") {
@@ -204,57 +198,14 @@
     }
     
     function validateEmail($email) {
-      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-      if( !emailReg.test( $email ) ) {
-        return false;
-      } else {
-        return true;
-      }
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        if( !emailReg.test( $email ) ) {
+            return false;
+        } else {
+            return true;
+        }
     }
     
-    function get_month (id){
-        switch(id) {
-            case 0:
-                month = "Jan"
-                break;
-            case 1:
-                month = "Feb"
-                break;
-            case 2:
-                month = "Mar"
-                break;
-            case 3:
-                month = "Apr"
-                break;
-            case 4:
-                month = "May"
-                break;
-            case 5:
-                month = "June"
-                break;
-            case 6:
-                month = "July"
-                break;
-            case 7:
-                month = "Aug"
-                break;
-            case 8:
-                month = "Sep"
-                break;
-            case 9:
-                month = "Oct"
-                break;
-            case 10:
-                month = "Nov"
-                break;
-            case 11:
-                month = "Dec"
-                break;
-                
-        }
-        return month;
-    }
-
     $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
