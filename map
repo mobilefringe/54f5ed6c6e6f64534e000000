@@ -115,7 +115,7 @@
             var maptype = "svg"
             renderMap(maptype);
             
-            $(".zoom-in").val("Zoom In");
+            $(".zoom-in").html('<p style="display: none;">Zoom In</p>');
         }
         
         function renderStoreList(stores){
