@@ -192,21 +192,7 @@
                 $('#cat' + categoryid + '_list').append('<span id="store_for_' + store.id + '"><a href="../stores/' + store.slug + '"><p class="directory_content directory_name_col">' + store.name + '</p></a></span>');    
             }
         }
-         
-    
-    // function goToStore(store_details){
-    //     if(typeof(store_details) != 'undefined' && store_details != null){
-    //         window.location.href = "/stores/"+store_details.slug;
-    //     }
-    // }
 
-    // function getSVGMapURL(){
-    //     initData();
-    //     var mallDataJSON = JSON.parse(getStorage().mallData);
-    //     return 'https://mallmaverick.cdn.speedyrails.net' + mallDataJSON.property.svgmap_url;
-    // }
-    
-    
         loadMallData(renderAll);  
     });
     
