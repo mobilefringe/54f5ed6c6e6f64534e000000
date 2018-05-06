@@ -36,7 +36,7 @@
                                 {{/store_detail_btn}}
                                 <br>
                                 {{job_type}}
-                                <a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px">Job Details</a>
+                                <a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px" aria-label="{{name}}">Job Details</a>
                             </p>
                         </div>
                     </div>
