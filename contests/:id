@@ -159,9 +159,9 @@
                                     if (s == true){
                                         var email = $("#email").val();
                                         $('input[name="cm-iljuhu-iljuhu"]').attr('value',email);
-                                         $.getJSON(
+                                        $.getJSON(
                                             "//mobilefringe.createsend.com/t/d/s/iljuhu/?callback=?",
-                                          $("#subForm").serialize(),
+                                            $("#subForm").serialize(),
                                             function (data) {
                                                 if (data.Status === 400) {
                                                     e.preventDefault();
@@ -171,12 +171,11 @@
                                                     submit_contest(data);
                                                       
                                                 }
-                                        });  
+                                            }
+                                        );  
                                     } else {
-            
                                         alert("Invaid E-mail address.")
                                     }
-                                    
                                 } else {
                                     data = $(this).serialize();
                                     submit_contest(data);
@@ -184,32 +183,25 @@
                             } else {
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
                             }
-                            
-                            
                         } else {
                             alert("Please agree to the terms and conditions before submitting!")
                         }
+                    } else {
+                        alert("Please Enter Correct Verification Number");
+                        randomgen();
                     }
-                        else
-                        {
-                            alert("Please Enter Correct Verification Number");
-                            randomgen();
-                        }
-                    
-                    });
-                } else {
-                    $("#loading_screen").hide();
-                    $("#404_msg").fadeIn( "fast");
-                }
-            
-            
+                });
+            } else {
+                $("#loading_screen").hide();
+                $("#404_msg").fadeIn( "fast");
+            }
         }
         
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
             $.ajax({
-                url: host+"/newsletter_no_captcha",
+                url: host + "/newsletter_no_captcha",
                 type: "POST",
                 data: data,
                 success: function(data) {
@@ -231,7 +223,6 @@
             $('#verifyNumHidden').val(rannumber);
         }
     
-        
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
@@ -247,17 +238,12 @@
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
 
         loadMallData(renderAll);  
-        
-        
-        
         
         function verify_required_fields (){
             if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
@@ -277,16 +263,12 @@
         }
         
         function validateEmail($email) {
-          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-          if( !emailReg.test( $email ) ) {
-            return false;
-          } else {
-            return true;
-          }
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if( !emailReg.test( $email ) ) {
+                return false;
+            } else {
+                return true;
+            }
         }
-
-    
-  
     });
-    
 </script>
