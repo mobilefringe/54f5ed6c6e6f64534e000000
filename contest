@@ -46,76 +46,80 @@
     </div>
     <div class="inside_page_content">
         <img class="contest_image" alt="" src="//kodekloud.s3.amazonaws.com/sites/54f5ed6c6e6f64534e000000/77f957b8994f2d65ac6199950365bcd4/SC Contests - Teenage Texters.jpg" />
-     <br>
-     <div class="contest_form_div">
+        <br>
+        <div class="contest_form_div">
            <p class="contest_description">Join our mailing list to be automatically entered into our monthly draw for a $50.00 gift card to the Sheridan Centre store of your choice. Draws will take place on the 1st of every month and winners will be notified by email by the 5th of the month.</p>
-
-         <form action="//mobilefringe.createsend.com/t/d/s/iljuul/" method="post" id="contest_form">
-            <p style="display:none">
-                <label for="fieldName">Name</label><br />
-                <input id="fieldName" name="cm-name" type="text"/>
-            </p>
-            <p class="large_field">
-                <label for="firstName">First Name*</label><br/>
-                <input id="firstName" type="text" required placeholder="First Name" />
-            </p>
-            <p class="large_field">
-                <label for="lastName">Last Name*</label><br/>
-                <input id="lastName" type="text" required placeholder="Last Name"/>
-            </p>
-            <p class="large_field">
-                <label for="email">Email*</label><br />
-                <input id="email" name="cm-iljuul-iljuul" type="email" required placeholder="Email"/>
-            </p>
-            <p class="large_field">
-                <label for="fieldjykykl">Phone Number*</label><br />
-                <input id="fieldjykykl" name="cm-f-jykykl" type="text" required placeholder="Phone Number"/>
-            </p>
-            <p class="full_field">
-                <label for="fieldjykyki">Street Address</label><br />
-                <input id="fieldjykyki" name="cm-f-jykyki" type="text" placeholder="Street Address"/>
-            </p>
-            <p class="small_field">
-                <label for="fieldjykykt">City</label><br />
-                <input id="fieldjykykt" name="cm-f-jykykt" type="text" placeholder="City"/>
-            </p>
-            <p class="small_field">
-                <label for="fieldjykykr">Postal Code*</label><br />
-                <input id="fieldjykykr" name="cm-f-jykykr" type="text" required placeholder="Postal Code"/>
-            </p>
-            <p class="small_field">
-                <label for="fieldjykyky">Year of Birth*</label><br />
-                <input id="fieldjykyky" name="cm-f-jykyky" type="text" required placeholder= "Year of Birth"/>
-            </p>
-            <p style="display:none">
-                <label for="fieldjykykj">Contest ID</label><br />
-                <input id="fieldjykykj" name="cm-f-jykykj" type="text" />
-            </p>
-            <br>
-            <br>
-            <br>
-                <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+            <form action="//mobilefringe.createsend.com/t/d/s/iljuul/" method="post" id="contest_form">
+                <p style="display:none">
+                    <label for="fieldName">Name</label><br />
+                    <input id="fieldName" name="cm-name" type="text"/>
+                </p>
+                <p class="large_field">
+                    <label for="firstName">First Name*</label><br/>
+                    <input id="firstName" type="text" required placeholder="First Name" />
+                </p>
+                <p class="large_field">
+                    <label for="lastName">Last Name*</label><br/>
+                    <input id="lastName" type="text" required placeholder="Last Name"/>
+                </p>
+                <p class="large_field">
+                    <label for="email">Email*</label><br />
+                    <input id="email" name="cm-iljuul-iljuul" type="email" required placeholder="Email"/>
+                </p>
+                <p class="large_field">
+                    <label for="fieldjykykl">Phone Number*</label><br />
+                    <input id="fieldjykykl" name="cm-f-jykykl" type="text" required placeholder="Phone Number"/>
+                </p>
+                <p class="full_field">
+                    <label for="fieldjykyki">Street Address</label><br />
+                    <input id="fieldjykyki" name="cm-f-jykyki" type="text" placeholder="Street Address"/>
+                </p>
+                <p class="small_field">
+                    <label for="fieldjykykt">City</label><br />
+                    <input id="fieldjykykt" name="cm-f-jykykt" type="text" placeholder="City"/>
+                </p>
+                <p class="small_field">
+                    <label for="fieldjykykr">Postal Code*</label><br />
+                    <input id="fieldjykykr" name="cm-f-jykykr" type="text" required placeholder="Postal Code"/>
+                </p>
+                <p class="small_field">
+                    <label for="fieldjykyky">Year of Birth*</label><br />
+                    <input id="fieldjykyky" name="cm-f-jykyky" type="text" required placeholder= "Year of Birth"/>
+                </p>
+                <p style="display:none">
+                    <label for="fieldjykykj">Contest ID</label><br />
+                    <input id="fieldjykykj" name="cm-f-jykykj" type="text" />
+                </p>
+                <br>
+                <br>
+                <br>
+                <label for="enterVerify">
+                    Enter the following number below to proceed: <div id="verifyNum"></div>
+                </label>
+                <br>
                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                 <input type="text" id="enterVerify" name="enterVerify" />
-            <br>
-            <span>
                 <br>
-                <label for="newsletter_signup" style="display:none">Agree Terms</label>
-                <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;Yes, I would like to receive ongoing news related to events, promotions and special announcements from Sheridan Centre.
-            </span>
-            <br>
-            <br>
-            <span>
-                <label for="agree_terms" style="display:none">Agree Terms</label>
-                <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridancentre-rules-regulations"><u>Rules and Regulations</u></a>. 
-            </span>
-            <br>
-            <br>
-            <p>
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </p>
-        </form>
-     </div>
+                <span>
+                    <br>
+                    <label for="newsletter_signup" style="display:none">Agree Terms</label>
+                    <input type="checkbox" class="info_check" id="newsletter_signup"/>
+                    &nbsp;Yes, I would like to receive ongoing news related to events, promotions and special announcements from Sheridan Centre.
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label for="agree_terms" style="display:none">Agree Terms</label>
+                    <input type="checkbox" class="info_check" id="agree_terms" required/>
+                    &nbsp;I agree to the <a href = "/pages/sheridancentre-rules-regulations"><u>Rules and Regulations</u></a>. 
+                </span>
+                <br>
+                <br>
+                <p>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
     </div>
 </div>
 <script>
