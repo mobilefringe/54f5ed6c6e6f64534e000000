@@ -43,7 +43,7 @@
                 </script>
             </div>  
             <section class="service_teasers" style="display:none" id="no_event_container">
-                <h2>There are no jobs posted at this time, please check back later.</h2>
+                <h3>There are no jobs posted at this time, please check back later.</h3>
             </section>
         </div>
         <div class="right_column">
