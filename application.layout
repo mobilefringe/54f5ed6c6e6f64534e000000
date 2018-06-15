@@ -107,7 +107,7 @@
             display: inline-block;
             width: 150px;
             height: 60px;
-            background-image: url("//codecloud.cdn.speedyrails.net/sites/59a872276e6f64586b550000/image/png/1529077407482/Proudly Managed By Avison Young_white logo.png");
+            background-image: url("//codecloud.cdn.speedyrails.net/sites/59a872276e6f64586b550000/image/png/1529077840718/Proudly Managed By Avison Young_white logo_rect.png");
             background-size: 100px 70px;
             background-repeat: no-repeat;
         }
