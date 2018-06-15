@@ -100,15 +100,15 @@
         setEndPoint('//sheridancentre.mallmaverick.com/api/v4/sheridancentre/all.json');
     </script>
     <style>
-    .bk_logo_svg {
+        .bk_logo_svg {
             position: absolute;
-            top: 0;
+            top: -10px;
             right: 0;
             display: inline-block;
             width: 150px;
-            height: 60px;
-            background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/036/590/original/BK_Logo_ProudlyManagedBy_White_final-01.svg?1517934408);
-            background-size: 100px 70px;
+            height: 90px;
+            background-image: url("//codecloud.cdn.speedyrails.net/sites/59a872276e6f64586b550000/image/png/1529077407482/Proudly Managed By Avison Young_white logo.png");
+            background-size: 100px 100px;
             background-repeat: no-repeat;
         }
         /*custom styles*/
