@@ -357,7 +357,7 @@
             url : "//mallmaverick.com/send_contact_email",
             type: "POST",
             data : { 
-                'send_to': "JSim@Bentallkennedy.com", 
+                'send_to': "rita.eid@avisonyoung.com", 
                 'subject': "Sheridan Centre Community Rental Form Application", 
                 'body': {
                     "Legal Name of Organization": $('#legalName').val(), 
