@@ -53,6 +53,7 @@ template {
 }
 a {
   background: transparent;
+  color: #434f8c;
 }
 a:active,
 a:hover {
@@ -355,10 +356,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 #wrapper{
     
-}
-
-.advisor_link {
-    color: #434f8c !important;
 }
 
 /*.flex-control-nav, .flex-direction-nav{*/
