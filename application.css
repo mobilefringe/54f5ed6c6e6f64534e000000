@@ -2042,7 +2042,6 @@ table th[class*="col-"] {
     
     .footer_text{
         width:auto !important;
-        font-size: 20px !important;
     }
     
     .footer_div{
@@ -8002,6 +8001,7 @@ footer {
 }
 footer a {
     color: #fff;
+    font-size: 20px;
 }
 footer a:hover,
 footer a:active {
