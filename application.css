@@ -2039,6 +2039,7 @@ table th[class*="col-"] {
     
     .footer_text{
         width:auto !important;
+        color: #fff;
     }
     
     .footer_div{
