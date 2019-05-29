@@ -7998,7 +7998,7 @@ footer a {
 }
 footer a:hover,
 footer a:active {
-  color: red;
+  color: #8483af !important;
   text-decoration: none;
 }
 .twitter_feed_wrapper {
