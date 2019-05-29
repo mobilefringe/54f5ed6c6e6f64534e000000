@@ -358,7 +358,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .advisor_link {
-    color: #434f8c;
+    color: #434f8c !important;
 }
 
 /*.flex-control-nav, .flex-direction-nav{*/
