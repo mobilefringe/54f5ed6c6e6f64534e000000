@@ -2213,6 +2213,10 @@ table th[class*="col-"] {
         padding-left:10px !important;
         font-size:10px;
         height:50px !important;
+        
+        a {
+            color: #333;
+        }
     }
     
     
