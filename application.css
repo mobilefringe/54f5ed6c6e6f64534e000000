@@ -4776,7 +4776,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #cccccc;
 }
 .breadcrumb > .active {
-  color: #333333;
+  color: #999999;
 }
 .pagination {
   display: inline-block;
