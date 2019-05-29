@@ -453,7 +453,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border-right:1px solid #eeeeee;
 }
 .left_column a {
-   color:#434f8c; 
+   color:#253a80; 
 }
 .right_column{
     margin-left:40px;
@@ -463,7 +463,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
 }
 .right_column_header{
-    color:#434f8c !important;
+    color:#253a80 !important;
     font-size:20px;
     text-transform:uppercase;
     margin-bottom:0;
@@ -2735,7 +2735,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #434f8c !important;
+  background-color: #253a80 !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
