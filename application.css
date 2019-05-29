@@ -436,6 +436,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 
 /********************inside page CSS*****************************/
+.dark_link {
+    color: red;
+}
 .inside_page_content{
     width:960px;
     display:block;
@@ -2740,7 +2743,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #434f8c !important;
+  background-color: #e2222f;
   border-color: #a1222f;
 }
 .btn-primary:active,
