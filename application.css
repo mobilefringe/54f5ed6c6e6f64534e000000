@@ -7993,6 +7993,9 @@ footer {
   background: url(images/backgrounds/wild_oliva_dark.png);
   background: none #222222;
 }
+footer a {
+    color: #fff;
+}
 footer a:hover,
 footer a:active {
   color: #e2222f;
