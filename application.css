@@ -357,6 +357,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
 }
 
+.advisor_link {
+    color: #434f8c;
+}
+
 /*.flex-control-nav, .flex-direction-nav{*/
 /*  display:none \9 !important;*/
 /*}*/
