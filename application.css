@@ -2215,7 +2215,7 @@ table th[class*="col-"] {
         height:50px !important;
     }
     
-    .breadcrumb li a {
+    .breadcrumb > li  {
         color: red !important;
     }
     
