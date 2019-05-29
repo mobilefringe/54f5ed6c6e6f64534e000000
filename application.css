@@ -2042,6 +2042,7 @@ table th[class*="col-"] {
     
     .footer_text{
         width:auto !important;
+        font-size: 20px;
     }
     
     .footer_div{
