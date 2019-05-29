@@ -2213,12 +2213,10 @@ table th[class*="col-"] {
         padding-left:10px !important;
         font-size:10px;
         height:50px !important;
-        
-        li {
-            a {
-                color: #333;
-            }   
-        }
+    }
+    
+    .breadcrumb li a {
+        color: red;
     }
     
     
