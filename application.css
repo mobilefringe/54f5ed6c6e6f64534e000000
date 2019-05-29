@@ -2214,8 +2214,10 @@ table th[class*="col-"] {
         font-size:10px;
         height:50px !important;
         
-        a {
-            color: #333;
+        li {
+            a {
+                color: #333;
+            }   
         }
     }
     
