@@ -317,7 +317,7 @@
         <div class="container">
             <div class="footer_div">
             <div class="footer_teaser" style="margin-right:195px">
-                <h2 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h2>
+                <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>
                 <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
                 <form action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="post" id="subForm">
                     <label for="fieldEmail" style="display:none"> subscribe email </label>
