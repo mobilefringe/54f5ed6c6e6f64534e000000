@@ -2216,7 +2216,7 @@ table th[class*="col-"] {
     }
     
     .breadcrumb li a {
-        color: red;
+        color: red !important;
     }
     
     
