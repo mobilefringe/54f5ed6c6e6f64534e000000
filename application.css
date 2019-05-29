@@ -2215,10 +2215,6 @@ table th[class*="col-"] {
         height:50px !important;
     }
     
-    .breadcrumb > li  {
-        color: red !important;
-    }
-    
     
     /*#zControls{*/
     /*    display:none;*/
@@ -4777,7 +4773,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .breadcrumb > li + li:before {
   content: ">>\00a0";
   padding: 0 5px;
-  color: #cccccc;
+  color: #333333;
 }
 .breadcrumb > .active {
   color: #333333;
