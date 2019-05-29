@@ -2112,6 +2112,7 @@ table th[class*="col-"] {
     
     .footer-text{
         text-align:center;
+        color: #fff;
     }
     
     .service_teaser .service_photo figure{
