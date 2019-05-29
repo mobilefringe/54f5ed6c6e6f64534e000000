@@ -449,6 +449,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display:inline-block;
     border-right:1px solid #eeeeee;
 }
+.left_column a {
+   color:red; 
+}
 .right_column{
     margin-left:40px;
     display:inline-block;
