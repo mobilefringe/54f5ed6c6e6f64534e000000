@@ -457,7 +457,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
 }
 .right_column_header{
-    color:#434f8c;
+    color:#0076a8;
     font-size:20px;
     text-transform:uppercase;
     margin-bottom:0;
@@ -8125,7 +8125,7 @@ li.media a.media-date span {
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 300;
-  color: #fff;
+  color: #999999;
   font-size: 13px;
 }
 /* =Boxed Layout
