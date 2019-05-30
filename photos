@@ -39,7 +39,7 @@
                             <div class="portfolio_item"> 
                                 {{#name}}
                                     <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
-                                {{/url}}
+                                {{/name}}
                                     <img alt="photo{{id}}" src="{{alt_url}}"/>
                                 </a>
                              </div>
