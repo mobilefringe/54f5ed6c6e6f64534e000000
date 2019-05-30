@@ -94,10 +94,12 @@
 
 
 
-
-    <select id="storelist_container" class="pull-left storelist_dd">
+    <label>
+        <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
+    </label>
+    
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"><p class="hidden-field">Zoom in</p></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"><p class="hidden-field">Zoom out</p></span></button>
