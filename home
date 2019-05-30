@@ -228,7 +228,8 @@
             $('.flexslider').flexslider({
                 animation: "slide",
                 controlNav: true,
-                directionNav: true,        
+                directionNav: true,
+                pauseOnHover: true,
                 prevText: "",
                 nextText: ""
             });
