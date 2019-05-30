@@ -94,6 +94,7 @@
     <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
+    <label class="hidden-field" for ="svg_storelist_container">Store List</label>
     <select id="svg_storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
