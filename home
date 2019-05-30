@@ -31,7 +31,8 @@
                         <label for="PCODE" class="main_label"><span class="">Postal Code</span>
 					        <input id="PCODE" name="cm-f-tdtldi" placeholder="" class="custom_field_control" required="required" type="text" value="">
                         </label>
-                        <label for="FMALEMALE" class="main_label radio_main"><span class="">Female/Male</span>
+                        <fieldset>
+                            <label for="FMALEMALE" class="main_label radio_main"><span class="">Female/Male</span>
                             <label for="FMALEMALE-1" class="radio_inside" required="required">
                                 <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-1" checked="checked" value="Female">
                                 <span class="">Female</span>
@@ -40,7 +41,8 @@
                                 <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-2" value="Male">
                                 <span class="">Male</span>
                             </label>
-                        </label>
+                            </label>
+                        </fieldset>
                         <label class="main_label">
                             <input type="checkbox" id="popup_agree" />
                             I agree to receive emails from Sheridan Centre.
