@@ -102,7 +102,7 @@
                             <div class="portfolio_item"> 
                                 <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                                     <figure >
-                                        <img class="feature_image" src="{{image_url}}" />
+                                        <img class="feature_image" src="{{image_url}}" alt="Click here for more info on {{name}}" />
                                         <figcaption>
                                             <div class="view_button">View</div>
                                         </figcaption>
