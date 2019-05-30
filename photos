@@ -37,9 +37,9 @@
                     <script id="photo_template" type="x-tmpl-mustache/text">
             
                             <div class="portfolio_item"> 
-                                {{#name}}
+                                {{#alt_url}}
                                     <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
-                                {{/name}}
+                                {{/alt_url}}
                                     <img alt="photo{{id}}" src="{{alt_url}}"/>
                                 </a>
                              </div>
