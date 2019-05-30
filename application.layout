@@ -114,11 +114,11 @@
         }
         /*custom styles*/
         a .directory_content:hover{
-            color: #505050 !important;
+            color: #938c84 !important;
         }
         /*hyperlinks*/
         a {
-            color:#938c84;
+            color:#505050;
             text-decoration:inherit;
         }
         /*hyperlink hover color*/
