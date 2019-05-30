@@ -361,6 +361,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /*  display:none \9 !important;*/
 /*}*/
 
+.flex-control-paging {
+    color: #253a80;
+}
+
 .slides{
     height:333px;
 }
