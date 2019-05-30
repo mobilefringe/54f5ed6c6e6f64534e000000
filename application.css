@@ -369,7 +369,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: #253A80 !important;
 }
 
-.flex-control-paging li a.flex-active {
+.flex-active {
     color: #000 !important;
 }
 
