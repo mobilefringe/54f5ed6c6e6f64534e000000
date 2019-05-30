@@ -69,9 +69,11 @@
             <script id="banner_template" type="x-tmpl-mustache/text">
                  
                <li class="item">
+               {{#url}}
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    <img src="{{image_url}}" alt="{{name}}" />
-                    </a>
+               {{/url}}
+                <img src="{{image_url}}" alt="{{name}}" />
+                </a>
                </li>
               
             </script>
