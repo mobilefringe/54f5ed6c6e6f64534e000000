@@ -40,8 +40,8 @@
                                 {{#name}}
                                     <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
                                     <img alt="photo{{id}}" src="{{alt_url}}"/>
-                                {{/name}}
                                 </a>
+                                {{/name}}
                              </div>
                     </script>
                 
