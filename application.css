@@ -365,6 +365,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:333px;
 }
 
+.flex-control-paging li a {
+    color: #000;
+}
+
 ::-ms-reveal .flex-control-paging{
     display: none;
 }
@@ -575,10 +579,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .contest_image{
     width:858px;
     height:500px;
-}
-
-#agreement_terms {
-    color: #505050;
 }
 
 
@@ -2737,7 +2737,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #253a80 !important;
+  background-color: #e2222f;
+  border-color: #a1222f;
 }
 .btn-primary:hover,
 .btn-primary:focus,
