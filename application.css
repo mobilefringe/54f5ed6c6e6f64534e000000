@@ -372,7 +372,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .flex-active {
     color: #000 !important;
-    background: #fff !important;
+    /*background: #fff !important;*/
 }
 
 ::-ms-reveal .flex-control-paging{
