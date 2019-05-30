@@ -99,8 +99,8 @@
             <option disabled selected>Select a Store</option>
     </select>
     <div id="zControls" class="pull-right">
-        <button class="zoom-in"><span class="glyphicon glyphicon-plus" alt="zoom in"></span></button>
-        <button class="zoom-out"><span class="glyphicon glyphicon-minus" alt="zoom out"></span></button>
+        <button class="zoom-in" alt="zoom in"><span class="glyphicon glyphicon-plus"></span></button>
+        <button class="zoom-out" alt="zoom out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""></div>
     
