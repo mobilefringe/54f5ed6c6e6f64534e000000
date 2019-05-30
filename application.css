@@ -8139,6 +8139,7 @@ li.media a.media-date span {
   font-weight: 300;
   color: #fff;
   font-size: 13px;
+  background-color: none !important;
 }
 /* =Boxed Layout
 -------------------------------------------------------------- */
