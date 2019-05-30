@@ -136,6 +136,7 @@
                 
                 if(popup.contest.id != null){
                     $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+                    $('.custom_img').setAttribute("alt", popup.description1);
                     $('.custom_text').text(popup.description1);
                     $('.p_name').text(popup.name);
                 } else {
