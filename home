@@ -81,7 +81,9 @@
 <section class="call_to_action" id="description_section">
     <script id="description_template" type="x-tmpl-mustache/text">
         </br>
-       <h3 class="site_welcome_msg">{{#welcome_message}}{{welcome_message}}{{/welcome_message}}</h3>
+        {{#welcome_message}}
+        <h3 class="site_welcome_msg">{{welcome_message}}</h3>
+        {{/welcome_message}}
        <h4 class="site_description">{{description}}</h4>
     </script>
 </section>
