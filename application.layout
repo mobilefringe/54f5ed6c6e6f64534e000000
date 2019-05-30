@@ -223,6 +223,9 @@
                 display: none;
             }
         }
+        .legend {
+            display: none;
+        }
     </style>
 </head>
 <body>
