@@ -436,9 +436,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 
 /********************inside page CSS*****************************/
-.dark_link {
-    color: #253a80;
-}
 .inside_page_content{
     width:960px;
     display:block;
@@ -453,7 +450,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border-right:1px solid #eeeeee;
 }
 .left_column a {
-   color:#253a80; 
+   color:#434f8c; 
 }
 .right_column{
     margin-left:40px;
@@ -463,7 +460,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
 }
 .right_column_header{
-    color:#253a80 !important;
+    color:#434f8c !important;
     font-size:20px;
     text-transform:uppercase;
     margin-bottom:0;
@@ -2118,6 +2115,8 @@ table th[class*="col-"] {
     
     .footer-text{
         text-align:center;
+        font-size: 30px !important;
+        color" #fff !important"
     }
     
     .service_teaser .service_photo figure{
@@ -2735,7 +2734,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #253a80 !important;
+  background-color: #e2222f;
+  border-color: #a1222f;
 }
 .btn-primary:hover,
 .btn-primary:focus,
