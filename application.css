@@ -2115,8 +2115,15 @@ table th[class*="col-"] {
     
     .footer-text{
         text-align:center;
-        font-size: 30px !important;
-        color" #fff !important"
+        color:#fff !important;
+        
+        span {
+            font-size: 30px !important;
+        }
+        
+        a {
+            font-size: 30px !important;
+        }
     }
     
     .service_teaser .service_photo figure{
