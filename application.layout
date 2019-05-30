@@ -145,8 +145,7 @@
             color:white !important;
         }
         .btn-primary:hover{
-            background: #938c84 !important;
-            border-color:#797268 !important;
+            background: #1E2E66 !important;
             text-align:center;
             color:white !important;
         }
