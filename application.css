@@ -365,11 +365,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:333px;
 }
 
-.flex-control-paging li a {
-    background: #253A80 !important;
-    color: #fff;
-}
-
 ::-ms-reveal .flex-control-paging{
     display: none;
 }
@@ -919,6 +914,10 @@ p {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
+}
+
+.hidden-field {
+    display: none;
 }
 @media (min-width: 768px) {
   .lead {
@@ -2738,8 +2737,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #e2222f;
-  border-color: #a1222f;
+  background-color: #253a80 !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
