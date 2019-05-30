@@ -118,12 +118,12 @@
         }
         /*hyperlinks*/
         a {
-            color:#505050;
+            color:#253A80;
             text-decoration:inherit;
         }
         /*hyperlink hover color*/
         a:hover{
-            color: #938c84 !important;
+            color: #505050 !important;
         }
         body{
             background:white;
