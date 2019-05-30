@@ -2116,14 +2116,6 @@ table th[class*="col-"] {
     .footer-text{
         text-align:center;
         color:#fff !important;
-        
-        span {
-            font-size: 30px !important;
-        }
-        
-        a {
-            font-size: 30px !important;
-        }
     }
     
     .service_teaser .service_photo figure{
@@ -8144,7 +8136,7 @@ li.media a.media-date span {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 300;
   color: #fff;
-  font-size: 13px;
+  font-size: 20px;
 }
 /* =Boxed Layout
 -------------------------------------------------------------- */
