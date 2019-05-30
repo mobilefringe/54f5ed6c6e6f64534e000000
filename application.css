@@ -577,6 +577,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:500px;
 }
 
+#agreement_terms {
+    color: #505050;
+}
+
 
 .list-group li {
     list-style:none;
