@@ -27,7 +27,7 @@
                             <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
                             <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{dates}}</p>
                             <p id="desc">{{description}}</p>
-                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Read More</a> </div>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-left">Promotion Details</a> </div>
                         </div>
                     </div>
                 </script>
