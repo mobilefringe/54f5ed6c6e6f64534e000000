@@ -30,8 +30,8 @@
                         <a href="/stores/{{slug}}"><p class="directory_content directory_name_col">{{name}}</p></a>
                     {{/name}} 
                     {{#phone}} 
-                        <a href="tel:{{phone}}"><p class="directory_content directory_phone_col">{{phone}}</p></a>
-                    {{/phone}}
+                        <a href="tel:{{phone}}"><p class="directory_content directory_phone_col">{{phone}}</p>{{/phone}}</a>
+                    
                     </script>
                 </div>
                 
