@@ -92,7 +92,7 @@
 
 
 
-    <label class="hidden-field" for ="storelist_container">Store List</label>
+    <label style="display: none;" for="storelist_container">Select a Store</label>>
     <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
@@ -134,7 +134,8 @@
             var maptype = "svg"
             renderMap(maptype);
             
-            
+            $(".zoom-in").append('<p style="display: none;">Zoom In</p>');
+           	$(".zoom-out").append('<p style="display: none;">Zoom Out</p>');
            
         }
         
