@@ -409,7 +409,7 @@
                 type: "POST",
                 data : { 
                     // 'send_to': "rita.eid@avisonyoung.com", 
-                    'send_to': "stephanie@mobilefringe.com",
+                    'send_to': "stephpileggi@hotmail.com",
                     'subject': "Sheridan Centre Community Rental Form Application", 
                     'body': {
                         "Legal Name of Organization": $('#legalName').val(), 
