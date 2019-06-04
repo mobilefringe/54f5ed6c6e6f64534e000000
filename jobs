@@ -31,7 +31,7 @@
                     <div class="promo_inside_content">
                         <div class="promo_desc_box" style="width:100%">
                             <a href="../jobs/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
-                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px">Read More</a></p>
+                            <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{job_type}}<a href="../jobs/{{slug}}" class="btn btn-primary pull-right" style="margin-top:-17px">Job details</a></p>
                              </div>
                         </div>
                     </div>
