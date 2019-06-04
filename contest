@@ -144,7 +144,7 @@
     
     $('#contest_form').submit(function (e) {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            if ($("#agree_terms").prop("checked") == true){
+            if ($("#agreement_terms").prop("checked") == true){
                 var e = verify_required_fields();
                 if (e == true){
                     var name = $("#firstName").val() + " " + $("#lastName").val();
