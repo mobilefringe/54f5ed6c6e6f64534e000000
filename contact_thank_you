@@ -15,7 +15,7 @@
             <section class="article-text">
                <div class="row">
                     Your message has been submitted. We will contact you shortly.
-                    <br>
+                    <!--<br>-->
                     <!--Click <a href="/home" alt="home">here</a> to return to the site.-->
                </div>
             </section>
