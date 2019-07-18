@@ -32,8 +32,7 @@
     <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider.css" rel="stylesheet">
     <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">
-    <link href="//57f552136e6f646480000000.codecloudapp.com/application.css" rel="stylesheet">
-    <link href="/application.css" rel="stylesheet">
+    <link href="//bkindoortemplate.codecloudapp.com/application.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- DatePicker -->
     <link href="//kodekloud.s3.amazonaws.com/sites/550c63266e6f6462fa000000/d3888fcd0fecce8e286f68402e5cdea4/bootstrap-datepicker3.css" rel="stylesheet">
@@ -45,7 +44,6 @@
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
-    <script src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
     
     <!--Mustache is a client side templating engine //github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
@@ -118,12 +116,12 @@
         }
         /*hyperlinks*/
         a {
-            color:#253A80;
+            color:#938c84;
             text-decoration:inherit;
         }
         /*hyperlink hover color*/
         a:hover{
-            color: #505050 !important;
+            color: #938c84 !important;
         }
         body{
             background:white;
@@ -140,12 +138,14 @@
             border:40px solid #b9b7d0;
         }
         .btn-primary{
-            background: #253a80 !important;
+            background: #938c84 !important;
+            border-color:#797268 !important;
             text-align:center;
             color:white !important;
         }
         .btn-primary:hover{
-            background: #1E2E66 !important;
+            background: #938c84 !important;
+            border-color:#797268 !important;
             text-align:center;
             color:white !important;
         }
@@ -223,9 +223,6 @@
                 display: none;
             }
         }
-        .legend {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -235,8 +232,8 @@
      <div class="container">
           <div class="navbar navbar-default" role="navigation">
                <div class="navbar-header"><a class="navbar-brand" href="/home" id="site_logo">
-               <script id="logo_template" type="x-tmpl-mustache/text">{% raw %}<img src="//codecloud.cdn.speedyrails.net/sites/59a872276e6f64586b550000/image/png/1510612854000/Bentall Logo Updates-02.png" alt="Sheridan Centre">{% endraw %}</script>
-               </a><a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"><span class="fa fa-reorder"></span></span><p style="display:none">menu</p></a></div>
+               <script id="logo_template" type="x-tmpl-mustache/text">{% raw %}<img src="//codecloud.cdn.speedyrails.net/sites/59a872276e6f64586b550000/image/png/1510612854000/Bentall Logo Updates-02.png">{% endraw %}</script>
+               </a><a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"><span class="fa fa-reorder"></span></span><p style="display:none">menu</p> </a></div>
                 <div class="mobile_menu" style="display:none">
                     <ul>
                         <li><a href="#" onclick="javascript:toggle_submenu('directory_dd');">Store Directory <span class="caret"></span></a>
@@ -306,13 +303,10 @@
           </div>
           <div id="social_media_wrapper"> <a href="//www.facebook.com/SheridanCentreMississauga" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="//twitter.com/SheridanCentre" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a></div>
           <a href="https://www.avisonyoung.com/en_CA/" target="_blank">
-            <p style="display: none;">Avison Young Logo</p>
-            <div class="bk_logo_svg"></div>
-        </a>
+          <div class="bk_logo_svg"></div></a>
      </div>
 </header>
 <div id="back-top"><img alt="BackToTop" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
-<h1 style="display: none">Sheridan Centre</h1>
 <div id="page_content">{{yield}}</div>
 
 <footer>
@@ -324,8 +318,8 @@
                 <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>
                 <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
                 <form action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="post" id="subForm">
-                    <label for="homeEmail" style="display:none"> subscribe email </label>
-                    <input style="width:290px" class="search_input" id="homeEmail" name="cm-iljuhu-iljuhu" type="email" required placeholder="enter email" /> 
+                    <label for="fieldEmail" style="display:none"> subscribe email </label>
+                    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-iljuhu-iljuhu" type="email" required placeholder="enter email" /> 
                     <div class="checkbox footer_text" style="width:300px">
                         <span>
                         <label for="agree_terms" style="display:none">Agree Terms</label>
@@ -468,7 +462,7 @@
 <script type="text/javascript" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/wow.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
 <script type="text/javascript" src="//preview-template.codecloudapp.com/restart_theme.js"></script>
-<script type="text/javascript" src="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
+
 <script>
     var current_year = moment().year();
     $("#current_year").text(current_year);
