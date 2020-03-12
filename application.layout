@@ -338,23 +338,22 @@
                     </div>
                     <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                     <button class="btn btn-default feature-item-button" type="submit">Submit</button>
-                        
                 </form>
                 <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-                <br>
-                <br>
-                <form action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="post" id="subForm">
-                    <label for="fieldEmail" style="display:none"> subscribe email </label>
-                    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-iljuhu-iljuhu" type="email" required placeholder="enter email" /> 
-                    <div class="checkbox footer_text" style="width:300px">
-                        <span>
-                        <label for="agree_terms" style="display:none">Agree Terms</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Sheridan Centre
-                        </span>
-                    </div>
-                    <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
-                    <br>
-                </form>
+                <!--<br>-->
+                <!--<br>-->
+                <!--<form action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="post" id="subForm">-->
+                <!--    <label for="fieldEmail" style="display:none"> subscribe email </label>-->
+                <!--    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-iljuhu-iljuhu" type="email" required placeholder="enter email" /> -->
+                <!--    <div class="checkbox footer_text" style="width:300px">-->
+                <!--        <span>-->
+                <!--        <label for="agree_terms" style="display:none">Agree Terms</label>-->
+                <!--        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Sheridan Centre-->
+                <!--        </span>-->
+                <!--    </div>-->
+                <!--    <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>-->
+                <!--    <br>-->
+                <!--</form>-->
             </div>
                 <div class="footer_teaser">
                     <div id="footer_container">
