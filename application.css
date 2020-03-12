@@ -449,9 +449,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display:inline-block;
     border-right:1px solid #eeeeee;
 }
-.left_column a {
-   color:#434f8c; 
-}
 .right_column{
     margin-left:40px;
     display:inline-block;
@@ -460,7 +457,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
 }
 .right_column_header{
-    color:#434f8c !important;
+    color:#0076a8;
     font-size:20px;
     text-transform:uppercase;
     margin-bottom:0;
@@ -914,10 +911,6 @@ p {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
-}
-
-.hidden-field {
-    display: none;
 }
 @media (min-width: 768px) {
   .lead {
@@ -2119,7 +2112,6 @@ table th[class*="col-"] {
     
     .footer-text{
         text-align:center;
-        color:#fff !important;
     }
     
     .service_teaser .service_photo figure{
@@ -2737,7 +2729,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #253a80 !important;
+  background-color: #e2222f;
+  border-color: #a1222f;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -4777,16 +4770,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .breadcrumb > li {
   display: inline-block;
 }
-.breadcrumb > li > a {
-  color: #333333;
-}
 .breadcrumb > li + li:before {
   content: ">>\00a0";
   padding: 0 5px;
-  color: #333333;
+  color: #cccccc;
 }
 .breadcrumb > .active {
-  color: #333333;
+  color: #999999;
 }
 .pagination {
   display: inline-block;
@@ -8003,12 +7993,9 @@ footer {
   background: url(images/backgrounds/wild_oliva_dark.png);
   background: none #222222;
 }
-footer a {
-    color: #fff;
-}
 footer a:hover,
 footer a:active {
-  color: #fff !important;
+  color: #e2222f;
   text-decoration: none;
 }
 .twitter_feed_wrapper {
@@ -8138,7 +8125,7 @@ li.media a.media-date span {
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 300;
-  color: #fff;
+  color: #999999;
   font-size: 13px;
 }
 /* =Boxed Layout
@@ -8669,4 +8656,15 @@ blockquote p {
   .portfolio_slider_wrapper #carousel {
     display: none;
   }
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
