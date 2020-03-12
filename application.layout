@@ -330,12 +330,12 @@
                 <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A5318FC3C6A876F4F7AD8F5B05709B7CBC7418702017CDE5914B36B5F9A37994F4D6CD69AC75106512118434A2A962E70">
                     <label for="fieldEmail" class="visuallyhidden">Email</label>
                     <input autocomplete="Email" aria-label="Email" style="width:290px" class="search_input js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-iljuhu-iljuhu" required="" type="email" placeholder="enter email">
-                        
-                    <label for="cm-privacy-consent">
-                        <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" type="checkbox" style="margin-left:-15px; width:15px" required>
-                        &nbsp;I agree to receive emails from Sheridan Centre
-                    </label>
-                    
+                    <div class="checkbox footer_text" style="width:300px">
+                        <label for="cm-privacy-consent">
+                            <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" type="checkbox" style="margin-left:-15px; width:15px" required>
+                            &nbsp;I agree to receive emails from Sheridan Centre
+                        </label>
+                    </div>
                     <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                     <button type="submit">Submit</button>
                         
