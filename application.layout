@@ -331,9 +331,10 @@
                     <label for="fieldEmail" class="visuallyhidden">Email</label>
                     <input autocomplete="Email" aria-label="Email" style="width:290px" class="search_input js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-iljuhu-iljuhu" required="" type="email" placeholder="enter email">
                         
-                        
-                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" type="checkbox" style="margin-left:-15px; width:15px" required>
-                    <label for="cm-privacy-consent">&nbsp;I agree to receive emails from Sheridan Centre</label>
+                    <label for="cm-privacy-consent">
+                        <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" type="checkbox" style="margin-left:-15px; width:15px" required>
+                        &nbsp;I agree to receive emails from Sheridan Centre
+                    </label>
                     
                     <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                     <button type="submit">Submit</button>
