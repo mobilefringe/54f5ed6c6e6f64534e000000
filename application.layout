@@ -340,20 +340,6 @@
                     <button class="btn btn-default feature-item-button" type="submit">Submit</button>
                 </form>
                 <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-                <!--<br>-->
-                <!--<br>-->
-                <!--<form action="//mobilefringe.createsend.com/t/d/s/iljuhu/" method="post" id="subForm">-->
-                <!--    <label for="fieldEmail" style="display:none"> subscribe email </label>-->
-                <!--    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-iljuhu-iljuhu" type="email" required placeholder="enter email" /> -->
-                <!--    <div class="checkbox footer_text" style="width:300px">-->
-                <!--        <span>-->
-                <!--        <label for="agree_terms" style="display:none">Agree Terms</label>-->
-                <!--        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Sheridan Centre-->
-                <!--        </span>-->
-                <!--    </div>-->
-                <!--    <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>-->
-                <!--    <br>-->
-                <!--</form>-->
             </div>
                 <div class="footer_teaser">
                     <div id="footer_container">
@@ -408,19 +394,18 @@
                         </div>
                         </script>{% endraw %}
                     
-                        <ul class="list-group" >
-                            
+                        <ul class="list-group">
                             <li>
-                            <a  class="close-search list-group-item" style="color:black;font-weight:bold">
-                                <small>
-                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
-                                </small>
-                            </a>
+                                <a  class="close-search list-group-item" style="color:black;font-weight:bold">
+                                    <small>
+                                        <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
+                                    </small>
+                                </a>
                             </li>
                             <li>
-                            <div id="search_results_items" class="search-results-items" style="">
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </div>
+                                <div id="search_results_items" class="search-results-items" style="">
+                                    <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                                </div>
                             </li>
                             <li>
                                 <a  class="close-search list-group-item" style="">
@@ -459,7 +444,6 @@
                 <li>
                     <a href="/contact_us">contact Us</a>
                 </li>
-                
             </ul>
         </div>
     </section>
@@ -512,16 +496,6 @@
     } else {
         $("#menu_map").hide();
     }
-    // $('#subForm').submit(function (e) {
-    //     e.preventDefault();
-    //     if ($("#agree_terms").prop("checked") == true){
-    //         $('#subForm').unbind('submit').submit();
-    //     } else {
-    //         alert("Please check the agree box if you want to proceed.")
-    //     }
-        
-    // });
-    
 
     function toggle_menu (){
         if ($(".mobile_menu").is(":visible")){
