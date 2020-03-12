@@ -512,15 +512,15 @@
     } else {
         $("#menu_map").hide();
     }
-    $('#subForm').submit(function (e) {
-        e.preventDefault();
-        if ($("#agree_terms").prop("checked") == true){
-            $('#subForm').unbind('submit').submit();
-        } else {
-            alert("Please check the agree box if you want to proceed.")
-        }
+    // $('#subForm').submit(function (e) {
+    //     e.preventDefault();
+    //     if ($("#agree_terms").prop("checked") == true){
+    //         $('#subForm').unbind('submit').submit();
+    //     } else {
+    //         alert("Please check the agree box if you want to proceed.")
+    //     }
         
-    });
+    // });
     
 
     function toggle_menu (){
