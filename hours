@@ -100,7 +100,7 @@
             $.getJSON(pages_json).done(function(data) {
                 console.log(data)
                 
-                additionalHourInfo = data.body
+                additionalHourInfo = data
                 
                 $('.additional_hours').html(additionalHourInfo)
 
