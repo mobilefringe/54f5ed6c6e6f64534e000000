@@ -98,9 +98,11 @@
             prefix = get_prefix();
             var pages_json = prefix+ "/pages/sheridancentre-additional-hours-copy.json"
             $.getJSON(pages_json).done(function(data) {
+                console.log(data)
                 
                 
                 additionalHourInfo = data
+                
                 
                 
                 $('.additional_hours').html(additionalHourInfo.body)
