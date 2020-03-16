@@ -10,10 +10,6 @@
         Shopping Hours
     </div>
     <div class="inside_page_content">
-    
-        
-    
-    
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/5a559199c13efa2cbd2001f37022c6c2/Banner-Image-004_edited.jpg"/>
             
@@ -69,11 +65,8 @@
                     <p class="directory_content">{{name}}</p>
                     <p class="directory_content">{{address1}}</p>
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-  
                 </script>
             </div>
-            
-            
         </div>
     </div>
 </div>
