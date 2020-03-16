@@ -12,6 +12,10 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/5a559199c13efa2cbd2001f37022c6c2/Banner-Image-004_edited.jpg"/>
+            
+            <div class="additional_hours"></div>
+            
+            
             <p class="right_column_header">regular hours</p>
             <table id="reg_hours_container" class="reg_hours_container">
                 <script id="reg_hours_template" type="x-tmpl-mustache/text">
@@ -84,6 +88,59 @@
         }
         
         function renderPageData(container, template, collection, type){
+            
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            
+            var additionalHourInfo = {}
+            
+            prefix = get_prefix();
+            var pages_json = prefix+ "/pages/sheridancentre-additional-hours-copy.json"
+            $.getJSON(pages_json).done(function(data) {
+                
+                
+                additionalHourInfo = data.subpages[0]
+                checkMyBalance = data.subpages[1]
+                faqIntro = data.subpages[2]
+                
+                
+                $('.gift-card-purchase').html(giftCardIntro.body)
+                $('.check-balance').html(checkMyBalance.body)
+                $('#faq-intro').html(faqIntro.body)
+                
+                
+                $('.q1').text(data.subpages[3].title)
+                $('.a1').html(data.subpages[3].body)
+                
+                $('.q2').text(data.subpages[4].title)
+                $('.a2').html(data.subpages[4].body)
+                
+                $('.q3').text(data.subpages[5].title)
+                $('.a3').html(data.subpages[5].body)
+                
+                $('.q4').text(data.subpages[6].title)
+                $('.a4').html(data.subpages[6].body)
+                
+                $('.q5').text(data.subpages[7].title)
+                $('.a5').html(data.subpages[7].body)
+                
+                $('.q6').text(data.subpages[8].title)
+                $('.a6').html(data.subpages[8].body)
+                
+                $('.q7').text(data.subpages[9].title)
+                $('.a7').html(data.subpages[9].body)
+                
+                $('.q8').text(data.subpages[10].title)
+                $('.a8').html(data.subpages[10].body)
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            
+            
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
