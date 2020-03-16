@@ -85,10 +85,6 @@
             renderPageData('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours')
             $("#loading_screen").hide();
             $("#main_content").show();
-        }
-        
-        function renderPageData(container, template, collection, type){
-            
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
@@ -109,9 +105,9 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-            
-            
-            
+        }
+        
+        function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
