@@ -100,39 +100,11 @@
             $.getJSON(pages_json).done(function(data) {
                 
                 
-                additionalHourInfo = data.subpages[0]
-                checkMyBalance = data.subpages[1]
-                faqIntro = data.subpages[2]
+                additionalHourInfo = data
                 
                 
-                $('.gift-card-purchase').html(giftCardIntro.body)
-                $('.check-balance').html(checkMyBalance.body)
-                $('#faq-intro').html(faqIntro.body)
-                
-                
-                $('.q1').text(data.subpages[3].title)
-                $('.a1').html(data.subpages[3].body)
-                
-                $('.q2').text(data.subpages[4].title)
-                $('.a2').html(data.subpages[4].body)
-                
-                $('.q3').text(data.subpages[5].title)
-                $('.a3').html(data.subpages[5].body)
-                
-                $('.q4').text(data.subpages[6].title)
-                $('.a4').html(data.subpages[6].body)
-                
-                $('.q5').text(data.subpages[7].title)
-                $('.a5').html(data.subpages[7].body)
-                
-                $('.q6').text(data.subpages[8].title)
-                $('.a6').html(data.subpages[8].body)
-                
-                $('.q7').text(data.subpages[9].title)
-                $('.a7').html(data.subpages[9].body)
-                
-                $('.q8').text(data.subpages[10].title)
-                $('.a8').html(data.subpages[10].body)
+                $('.additional_hours').html(additionalHourInfo.body)
+
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
