@@ -69,7 +69,7 @@
                     <p class="directory_content">{{name}}</p>
                     <p class="directory_content">{{address1}}</p>
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-                    <p class="directory_content">Sheridan Centre Stores & Services will be deciding independently whether to operate on revised hours: 11:00 AM -7:00 PM, Effective until further notice.</p>
+  
                 </script>
             </div>
             
