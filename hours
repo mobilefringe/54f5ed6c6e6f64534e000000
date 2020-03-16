@@ -102,7 +102,7 @@
                 
                 additionalHourInfo = data
                 
-                $('.additional_hours').html(additionalHourInfo)
+                $('.additional_hours').html(additionalHourInfo.body)
 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
