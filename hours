@@ -100,12 +100,9 @@
             $.getJSON(pages_json).done(function(data) {
                 console.log(data)
                 
+                additionalHourInfo = data.body
                 
-                additionalHourInfo = data
-                
-                
-                
-                $('.additional_hours').html(additionalHourInfo.body)
+                $('.additional_hours').html(additionalHourInfo)
 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
