@@ -88,18 +88,14 @@
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            
             var additionalHourInfo = {}
-            
             prefix = get_prefix();
             var pages_json = prefix+ "/pages/sheridancentre-additional-hours-copy.json"
             $.getJSON(pages_json).done(function(data) {
                 console.log(data)
                 
                 additionalHourInfo = data
-                
                 $('.additional_hours').html(additionalHourInfo.body)
-
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
