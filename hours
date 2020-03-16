@@ -10,6 +10,10 @@
         Shopping Hours
     </div>
     <div class="inside_page_content">
+    
+        <div class="additional_hours"></div>
+    
+    
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/5a559199c13efa2cbd2001f37022c6c2/Banner-Image-004_edited.jpg"/>
             <p class="right_column_header">regular hours</p>
@@ -81,6 +85,27 @@
             renderPageData('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours')
             $("#loading_screen").hide();
             $("#main_content").show();
+            
+                        
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            
+            var additionalHourInfo = {}
+            
+            prefix = get_prefix();
+            var pages_json = prefix+ "/pages/sheridancentre-additional-hours-copy.json"
+            $.getJSON(pages_json).done(function(data) {
+                console.log(data)
+                
+                additionalHourInfo = data
+                
+                $('.additional_hours').html(additionalHourInfo.body)
+
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
         }
         
         function renderPageData(container, template, collection, type){
