@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     h3 {
         margin-top:0 !important;
         text-transform:uppercase;
@@ -11,8 +11,8 @@
 <div class="custom_popup">
     <div class="popup_form_div">
         <h2 class="pop_up_header p_name">Join Our eClub</h2>
-        <img class="text-left width_100 hide_desk custom_img" src="" alt="" />
-        <h3 class="text-right right_desc hide_desk custom_text">Sign up now!</h3>
+        <img class="text-left width_100 hide_desk custom_img" src="" />
+        <h3 class="text-right right_desc hide_desk custom_text"></h3>
         <div class="custom_row">
             <div class="col-md-6">
                 <section class="">
@@ -31,9 +31,7 @@
                         <label for="PCODE" class="main_label"><span class="">Postal Code</span>
 					        <input id="PCODE" name="cm-f-tdtldi" placeholder="" class="custom_field_control" required="required" type="text" value="">
                         </label>
-                        <fieldset>
-                            <legend class="legend">Select one:</legend>
-                            <label for="FMALEMALE" class="main_label radio_main"><span class="">Female/Male</span>
+                        <label for="FMALEMALE" class="main_label radio_main"><span class="">Female/Male</span>
                             <label for="FMALEMALE-1" class="radio_inside" required="required">
                                 <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-1" checked="checked" value="Female">
                                 <span class="">Female</span>
@@ -42,8 +40,7 @@
                                 <input type="radio" name="cm-f-tdtldj" id="FMALEMALE-2" value="Male">
                                 <span class="">Male</span>
                             </label>
-                            </label>
-                        </fieldset>
+                        </label>
                         <label class="main_label">
                             <input type="checkbox" id="popup_agree" />
                             I agree to receive emails from Sheridan Centre.
@@ -53,9 +50,9 @@
                 </section>
             </div>
             <div class="col-md-6 hide_phone">
-                <img class="text-left width_100 custom_img" src="" alt="" />
+                <img class="text-left width_100 custom_img" src="" />
                 <h2 class="text-right right_header p_name">Join Our eClub today!</h2>
-                <h3 class="text-right right_desc custom_text">Sign up now!</h3>
+                <h3 class="text-right right_desc custom_text"></h3>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -70,11 +67,9 @@
             <script id="banner_template" type="x-tmpl-mustache/text">
                  
                <li class="item">
-               {{#url}}
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-               {{/url}}
-                <img src="{{image_url}}" alt="{{name}}" />
-                </a>
+                    <img src="{{image_url}}"/>
+                    </a>
                </li>
               
             </script>
@@ -84,9 +79,7 @@
 <section class="call_to_action" id="description_section">
     <script id="description_template" type="x-tmpl-mustache/text">
         </br>
-        {{#welcome_message}}
-        <h3 class="site_welcome_msg">{{welcome_message}}</h3>
-        {{/welcome_message}}
+       <h3 class="site_welcome_msg">{{welcome_message}}</h3>
        <h4 class="site_description">{{description}}</h4>
     </script>
 </section>
@@ -100,12 +93,12 @@
                     <script id="feature_template" type="x-tmpl-mustache/text">
                         <div class="feature_div">
                             <div class="portfolio_description">
-                                <h3 class="feature_title">{{name}}</h3>
+                                <h3 class="feature_title"><a style="color:black;font-size:20px" href="{{url}}">{{name}}</a></h3>
                             </div>
                             <div class="portfolio_item"> 
                                 <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                                     <figure >
-                                        <img class="feature_image" src="{{image_url}}" alt="Click here for more info on {{name}}" />
+                                        <img class="feature_image" src="{{image_url}}" />
                                         <figcaption>
                                             <div class="view_button">View</div>
                                         </figcaption>
@@ -138,13 +131,12 @@
                 })
                 
                 if(popup.contest.id != null){
-                    $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
-                    $('.custom_img').setAttribute("alt", popup.description1);
+                    $('.custom_img').attr('src', '//assets.mallmaverick.com'+ popup.photo_url);
                     $('.custom_text').text(popup.description1);
                     $('.p_name').text(popup.name);
                 } else {
                     $('.popup_form_div').css('visibility', 'hidden');
-                    $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
+                    $('.custom_popup').css('background-image', 'url(//assets.mallmaverick.com' + popup.photo_url + ')');
                 }
                 
                 // if(isEmpty(popup.contest) == false){
@@ -232,13 +224,10 @@
             $('.flexslider').flexslider({
                 animation: "slide",
                 controlNav: true,
-                directionNav: true,
-                pauseOnHover: true,
+                directionNav: true,        
                 prevText: "",
                 nextText: ""
             });
-            $(".flex-prev").html("<p style='display: none'>Previous Slide</p>");
-		    $(".flex-next").html("<p style='display: none'>Next Slide</p>"); 
         }
         
         function renderFeatureItems(feature_template,feature_items,featureList){
