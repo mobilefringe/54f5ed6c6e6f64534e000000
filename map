@@ -71,7 +71,7 @@
         <p id="pop-over-map-phone">Phone Number</p>
     </span>
     <span class="pullright">
-        <img alt="right arrow" src="//kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/efe6c3ca0d8b7c35dc70c11b3c667cdf/arrow_green.png">
+        <img alt="arrow" src="//kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/efe6c3ca0d8b7c35dc70c11b3c667cdf/arrow_green.png">
     </span>
 </div>
 <div id="loading_screen">
@@ -87,22 +87,20 @@
     Centre Map
 </div>
 <div class="text-right">
-    <a href="//codecloud.cdn.speedyrails.net/sites/54f605386e6f6412de000000/application/pdf/1460046824000/Sheridan_map.pdf" target="_blank" alt="">Download Map</a>
+    <a href="//codecloud.cdn.speedyrails.net/sites/54f605386e6f6412de000000/application/pdf/1460046824000/Sheridan_map.pdf" target="_blank">Download Map</a>
 </div>
 <br />
 <div style="overflow:hidden;height:400px;margin:5px">
 
 
 
-    <label>
-        <select id="storelist_container" class="pull-left storelist_dd">
+
+    <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
-    </label>
-    
     <div id="zControls" class="pull-right">
-        <button class="zoom-in"><span class="glyphicon glyphicon-plus"><p class="hidden-field">Zoom in</p></span></button>
-        <button class="zoom-out"><span class="glyphicon glyphicon-minus"><p class="hidden-field">Zoom out</p></span></button>
+        <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
+        <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""></div>
     
@@ -312,7 +310,7 @@
     function getSVGMapURL(){
         initData();
         var mallDataJSON = JSON.parse(getStorage().mallData);
-        return 'https://mallmaverick.cdn.speedyrails.net' + mallDataJSON.property.svgmap_url;
+        return 'https://assets.mallmaverick.com' + mallDataJSON.property.svgmap_url;
     }
     
     $("#storelist_container").on('change', function() {
