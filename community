@@ -402,7 +402,7 @@
     	    
     	    
 	        $.ajax({
-                url : "//mallmaverick.com/send_contact_email",
+                url : "//assets.mallmaverick.com/send_contact_email",
                 type: "POST",
                 data : { 
                     'send_to': "rita.eid@avisonyoung.com", 
